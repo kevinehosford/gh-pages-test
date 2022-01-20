@@ -1,0 +1,29 @@
+[
+  {
+    "kind": "stream",
+    "dataset": "github-commit-comment-event",
+    "name": "gawlk/onebrand",
+    "who": "9b01bf58-a081-4553-b958-ee1541663939",
+    "query": {
+      "resolution": "auto",
+      "startTime": "1970-01-01T00:00:00.000Z",
+      "endTime": "2262-04-11T23:47:16.000Z",
+      "filter": {
+        "op": "and",
+        "field": "",
+        "children": [
+          {
+            "field": "repo",
+            "op": "==",
+            "value": "gawlk/onebrand"
+          }
+        ]
+      }
+    },
+    "metadata": {
+      "queryString": "AxiomFilter:{\"op\":\"and\",\"field\":\"\",\"children\":[{\"field\":\"repo\",\"op\":\"==\",\"value\":\"gawlk/onebrand\"}]}"
+    },
+    "id": "P8ymYglRbcaihy8vZn",
+    "created": "2020-08-20T18:09:19.410600523Z"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "87e709e6-4ec1-4074-beca-b9716606161e",
+    "integrationId": "github",
+    "name": "new-github-config",
+    "disabledUntil": "2020-06-22T21:33:23.369+06:30",
+    "properties": {
+      "APIEndpoint": "https://api.github.com",
+      "AccessToken": "34eed8e73730eb7e6548ff4f1e90e0eac551b585",
+      "Repositories": [
+        "facebook/react"
+      ],
+      "WebhookEnabled": false,
+      "WebhookSecret": ""
+    }
+  }
+]

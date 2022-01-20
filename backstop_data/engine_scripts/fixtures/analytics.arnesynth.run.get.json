@@ -1,0 +1,76 @@
+{
+  "numBlocks": 684,
+  "numEvents": 44957000,
+  "numFields": 16,
+  "compressedBytes": 13466024319,
+  "compressedBytesHuman": "14 GB",
+  "minTime": "2020-09-16T10:28:45Z",
+  "maxTime": "2020-09-22T17:52:07Z",
+  "fields": [
+    {
+      "name": "_sysTime",
+      "type": "integer"
+    },
+    {
+      "name": "_time",
+      "type": "integer"
+    },
+    {
+      "name": "content_type",
+      "type": "string"
+    },
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "is_tls",
+      "type": "boolean"
+    },
+    {
+      "name": "level",
+      "type": "string"
+    },
+    {
+      "name": "method",
+      "type": "string"
+    },
+    {
+      "name": "req_duration_ms",
+      "type": "float"
+    },
+    {
+      "name": "resp_body_size_bytes",
+      "type": "integer"
+    },
+    {
+      "name": "resp_header_size_bytes",
+      "type": "integer"
+    },
+    {
+      "name": "server_datacenter",
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "type": "string"
+    },
+    {
+      "name": "uri",
+      "type": "string"
+    },
+    {
+      "name": "user_agent",
+      "type": "string"
+    },
+    {
+      "name": "geo.city",
+      "type": "string"
+    },
+    {
+      "name": "geo.country",
+      "type": "string"
+    }
+  ],
+  "displayName": "arnesynth"
+}

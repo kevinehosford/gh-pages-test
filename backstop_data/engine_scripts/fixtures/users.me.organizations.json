@@ -1,0 +1,30 @@
+[
+  {
+    "organizationId": "globex-fanq",
+    "inviteId": "",
+    "name": "Globex",
+    "dnsLabel": "globex",
+    "created": "2020-11-02T15:43:49.955145Z"
+  },
+  {
+    "organizationId": "axiom-sxxy",
+    "inviteId": "",
+    "name": "Axiom Inc",
+    "dnsLabel": "axiom",
+    "created": "2020-11-03T00:00:39.85707Z"
+  },
+  {
+    "organizationId": "appd-cukc",
+    "inviteId": "",
+    "name": "AppD",
+    "dnsLabel": "appd",
+    "created": "2020-08-10T12:06:42.61298Z"
+  },
+  {
+    "organizationId": "acme-kb8p",
+    "inviteId": "",
+    "name": "Acme Corp",
+    "dnsLabel": "acme",
+    "created": "2020-06-04T15:02:19.466166Z"
+  }
+]

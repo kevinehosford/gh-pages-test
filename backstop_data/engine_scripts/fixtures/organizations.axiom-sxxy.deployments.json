@@ -1,0 +1,44 @@
+[
+  {
+    "deploymentId": "D322EG5ITPU0VSABBDKL9N113NRI4MSQFE4APUJUNC3I0DF2PNGG",
+    "name": "play-axiom-co",
+    "description": "",
+    "slug": "play-axiom--jy6",
+    "organizationId": "axiom-sxxy",
+    "licenceTier": "basic",
+    "updateChannel": "stable",
+    "created": "2020-07-23T23:05:44.794528Z",
+    "expiry": "2020-11-10T03:17:41.808571Z",
+    "uiVersion": "v0.17.0-dev+53c91ac76",
+    "dbVersion": "debug+df3020b7",
+    "peakDBs": 4,
+    "peakUIs": 2,
+    "metrics": {
+      "ingestedBytes": 1116939844552942,
+      "ingestedEvents": 2176440386569,
+      "numQueries": 23908647,
+      "averageBytesPerSec": 3447345199.2374754
+    }
+  },
+  {
+    "deploymentId": "IE30BF1P6K9DE4UJDQRH1P52PG5JDOA7G2BQ4QK7GNLRRD19KBIG",
+    "name": "local stuff",
+    "description": "",
+    "slug": "local-stuff-0nw",
+    "organizationId": "axiom-sxxy",
+    "licenceTier": "basic",
+    "updateChannel": "stable",
+    "created": "2020-10-29T16:08:09.485365Z",
+    "expiry": "2020-11-11T16:17:41.762813Z",
+    "uiVersion": "",
+    "dbVersion": "",
+    "peakDBs": 0,
+    "peakUIs": 0,
+    "metrics": {
+      "ingestedBytes": 0,
+      "ingestedEvents": 0,
+      "numQueries": 0,
+      "averageBytesPerSec": 0
+    }
+  }
+]

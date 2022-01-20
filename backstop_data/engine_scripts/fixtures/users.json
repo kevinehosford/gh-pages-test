@@ -1,0 +1,262 @@
+[
+  {
+    "id": "6a7fe355-1303-4071-be81-75fcf45a4c0f",
+    "name": "Lila",
+    "email": "lila@axiom.co",
+    "role": "owner",
+    "permissions": [
+      "CanUpdate",
+      "ChangeAccess",
+      "ChangeApiKeys",
+      "ChangeAuthentication",
+      "ChangeDashboards",
+      "ChangeIntegrations",
+      "ChangeMonitorsAndNotifiers",
+      "ChangeSavedQueries",
+      "ChangeVirtualFields",
+      "ManageBilling",
+      "ManageDatasets",
+      "ManageIngestTokens"
+    ]
+  },
+  {
+    "id": "811bbc2d-c2ae-441b-998e-4a5079c9c0be",
+    "name": "Mikkel Kamstrup Erlandsen",
+    "email": "mikkel@axiom.co",
+    "role": "owner",
+    "permissions": [
+      "CanUpdate",
+      "ChangeAccess",
+      "ChangeApiKeys",
+      "ChangeAuthentication",
+      "ChangeDashboards",
+      "ChangeIntegrations",
+      "ChangeMonitorsAndNotifiers",
+      "ChangeSavedQueries",
+      "ChangeVirtualFields",
+      "ManageBilling",
+      "ManageDatasets",
+      "ManageIngestTokens"
+    ]
+  },
+  {
+    "id": "c6c7381b-b24d-4107-b82e-d6cd26a490a1",
+    "name": "Michal Hruby",
+    "email": "michal@axiom.co",
+    "role": "owner",
+    "permissions": [
+      "CanUpdate",
+      "ChangeAccess",
+      "ChangeApiKeys",
+      "ChangeAuthentication",
+      "ChangeDashboards",
+      "ChangeIntegrations",
+      "ChangeMonitorsAndNotifiers",
+      "ChangeSavedQueries",
+      "ChangeVirtualFields",
+      "ManageBilling",
+      "ManageDatasets",
+      "ManageIngestTokens"
+    ]
+  },
+  {
+    "id": "752e2388-8f6d-467a-88cc-cfba5ec407f4",
+    "name": "Neil Jagdish Patel",
+    "email": "neil@axiom.co",
+    "role": "owner",
+    "permissions": [
+      "CanUpdate",
+      "ChangeAccess",
+      "ChangeApiKeys",
+      "ChangeAuthentication",
+      "ChangeDashboards",
+      "ChangeIntegrations",
+      "ChangeMonitorsAndNotifiers",
+      "ChangeSavedQueries",
+      "ChangeVirtualFields",
+      "ManageBilling",
+      "ManageDatasets",
+      "ManageIngestTokens"
+    ]
+  },
+  {
+    "id": "e22acabe-fc5a-4c28-9dbb-fd8254a7bb7b",
+    "name": "Arne Bahlo",
+    "email": "arne@axiom.co",
+    "role": "owner",
+    "permissions": [
+      "CanUpdate",
+      "ChangeAccess",
+      "ChangeApiKeys",
+      "ChangeAuthentication",
+      "ChangeDashboards",
+      "ChangeIntegrations",
+      "ChangeMonitorsAndNotifiers",
+      "ChangeSavedQueries",
+      "ChangeVirtualFields",
+      "ManageBilling",
+      "ManageDatasets",
+      "ManageIngestTokens"
+    ]
+  },
+  {
+    "id": "ab4479c4-4156-448d-a501-695e5dbf276c",
+    "name": "Conor Curran",
+    "email": "conor@axiom.co",
+    "role": "owner",
+    "permissions": [
+      "CanUpdate",
+      "ChangeAccess",
+      "ChangeApiKeys",
+      "ChangeAuthentication",
+      "ChangeDashboards",
+      "ChangeIntegrations",
+      "ChangeMonitorsAndNotifiers",
+      "ChangeSavedQueries",
+      "ChangeVirtualFields",
+      "ManageBilling",
+      "ManageDatasets",
+      "ManageIngestTokens"
+    ]
+  },
+  {
+    "id": "a641265f-8609-4ecc-9f25-7e8079a349b9",
+    "name": "Tola",
+    "email": "tola@axiom.co",
+    "role": "owner",
+    "permissions": [
+      "CanUpdate",
+      "ChangeAccess",
+      "ChangeApiKeys",
+      "ChangeAuthentication",
+      "ChangeDashboards",
+      "ChangeIntegrations",
+      "ChangeMonitorsAndNotifiers",
+      "ChangeSavedQueries",
+      "ChangeVirtualFields",
+      "ManageBilling",
+      "ManageDatasets",
+      "ManageIngestTokens"
+    ]
+  },
+  {
+    "id": "fcf4a0cc-5697-4b06-8c03-9b703a16bafb",
+    "name": "Kevin E Hosford",
+    "email": "kevin@axiom.co",
+    "role": "owner",
+    "permissions": [
+      "CanUpdate",
+      "ChangeAccess",
+      "ChangeApiKeys",
+      "ChangeAuthentication",
+      "ChangeDashboards",
+      "ChangeIntegrations",
+      "ChangeMonitorsAndNotifiers",
+      "ChangeSavedQueries",
+      "ChangeVirtualFields",
+      "ManageBilling",
+      "ManageDatasets",
+      "ManageIngestTokens"
+    ]
+  },
+  {
+    "id": "a6c8b89c-ad66-41a3-94dc-a8570488eaa3",
+    "name": "Seif Lofty",
+    "email": "seif@axiom.co",
+    "role": "owner",
+    "permissions": [
+      "CanUpdate",
+      "ChangeAccess",
+      "ChangeApiKeys",
+      "ChangeAuthentication",
+      "ChangeDashboards",
+      "ChangeIntegrations",
+      "ChangeMonitorsAndNotifiers",
+      "ChangeSavedQueries",
+      "ChangeVirtualFields",
+      "ManageBilling",
+      "ManageDatasets",
+      "ManageIngestTokens"
+    ]
+  },
+  {
+    "id": "9b01bf58-a081-4553-b958-ee1541663939",
+    "name": "Christopher Very Longname",
+    "email": "christopher@axiom.co",
+    "role": "owner",
+    "permissions": [
+      "CanUpdate",
+      "ChangeAccess",
+      "ChangeApiKeys",
+      "ChangeAuthentication",
+      "ChangeDashboards",
+      "ChangeIntegrations",
+      "ChangeMonitorsAndNotifiers",
+      "ChangeSavedQueries",
+      "ChangeVirtualFields",
+      "ManageBilling",
+      "ManageDatasets",
+      "ManageIngestTokens"
+    ]
+  },
+  {
+    "id": "e63a075e-393c-45ea-ac46-cf6917e930e3",
+    "name": "Ted",
+    "email": "ted@axiom.co",
+    "role": "owner",
+    "permissions": [
+      "CanUpdate",
+      "ChangeAccess",
+      "ChangeApiKeys",
+      "ChangeAuthentication",
+      "ChangeDashboards",
+      "ChangeIntegrations",
+      "ChangeMonitorsAndNotifiers",
+      "ChangeSavedQueries",
+      "ChangeVirtualFields",
+      "ManageBilling",
+      "ManageDatasets",
+      "ManageIngestTokens"
+    ]
+  },
+  {
+    "id": "79712eec-52b5-4705-9643-fafb877f9ff3",
+    "name": "Mohamed",
+    "email": "mohamed@axiom.co",
+    "role": "owner",
+    "permissions": [
+      "CanUpdate",
+      "ChangeAccess",
+      "ChangeApiKeys",
+      "ChangeAuthentication",
+      "ChangeDashboards",
+      "ChangeIntegrations",
+      "ChangeMonitorsAndNotifiers",
+      "ChangeSavedQueries",
+      "ChangeVirtualFields",
+      "ManageBilling",
+      "ManageDatasets",
+      "ManageIngestTokens"
+    ]
+  },
+  {
+    "id": "f83e245a-afdc-47ad-a765-4addd1994333",
+    "name": "Lukas Malkmus",
+    "email": "lukas@axiom.co",
+    "role": "owner",
+    "permissions": [
+      "CanUpdate",
+      "ChangeAccess",
+      "ChangeApiKeys",
+      "ChangeAuthentication",
+      "ChangeDashboards",
+      "ChangeIntegrations",
+      "ChangeMonitorsAndNotifiers",
+      "ChangeSavedQueries",
+      "ChangeVirtualFields",
+      "ManageBilling",
+      "ManageDatasets",
+      "ManageIngestTokens"
+    ]
+  }
+]

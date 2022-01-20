@@ -1,0 +1,218 @@
+[
+  {
+    "id": "aws",
+    "name": "Amazon Web Services",
+    "description": "\u003cp\u003eSupports Amazon Web Services.\u003c/p\u003e",
+    "url": "https://aws.amazon.com",
+    "formId": "aws",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "azure",
+    "name": "Microsoft Azure",
+    "description": "\u003cp\u003eConnects to Microsoft Azure and imports metrics and logfiles into Axiom. Read access must be granted in order for the collection to succeed.\u003c/p\u003e",
+    "url": "https://azure.microsoft.com",
+    "formId": "azure",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "circleci",
+    "name": "CircleCI",
+    "description": "\u003cp\u003eConnects to CircleCI and imports logs and metrics and notifies about running and failing builds..\u003c/p\u003e",
+    "url": "https://circleci.com",
+    "formId": "circleci",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "docker",
+    "name": "Docker Engine",
+    "description": "\u003cp\u003eProvides access to Docker Engine container metrics. The provided configuration parameters will be transformed to the Docker equivalent environment variables.\u003c/p\u003e",
+    "url": "https://www.docker.com",
+    "formId": "docker",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "elastic",
+    "name": "Elasticsearch",
+    "description": "\u003cp\u003eProvides access to Elasticsearch cluster health and node metrics. Be advised, that configuration validation succeeds every time because credentials can not be authenticated without actually performing metric collection. Make sure to double check the entered configuration parameters.\u003c/p\u003e",
+    "url": "https://www.elastic.co/de/products/elasticsearch",
+    "formId": "elastic",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "gcp",
+    "name": "Google Cloud Platform",
+    "description": "\u003cp\u003eConnects to the Google Cloud Platform and imports metrics and logs from Stackdriver. Read access to Stackdriver must be granted in order for the metric and log collection to succeed.\u003c/p\u003e",
+    "url": "https://cloud.google.com",
+    "formId": "gcp",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "description": "\u003cp\u003eConnects to GitHub and collects events and metrics from repositories.\u003c/p\u003e",
+    "url": "https://github.com",
+    "formId": "github",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "gitlab",
+    "name": "Gitlab",
+    "description": "\u003cp\u003eConnects to GitLab and collects metrics about repositories and activity logs.\u003c/p\u003e",
+    "url": "https://gitlab.com",
+    "formId": "gitlab",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "gitter",
+    "name": "Gitter",
+    "description": "\u003cp\u003eCollects gitter metrics.\u003c/p\u003e",
+    "url": "https://gitter.im",
+    "formId": "gitter",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "hadoop",
+    "name": "Apache Hadoop",
+    "description": "\u003cp\u003eProvides access to Apache Hadoop metrics.\u003c/p\u003e",
+    "url": "https://hadoop.apache.org",
+    "formId": "hadoop",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "haproxy",
+    "name": "HAProxy",
+    "description": "\u003cp\u003eProvides access to HAProxy metrics. In order to collect metrics the stats endpoint must be enabled.\u003c/p\u003e",
+    "url": "https://www.haproxy.com",
+    "formId": "haproxy",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "heroku",
+    "name": "Heroku",
+    "description": "\u003cp\u003eFetches Heroku metrics.\u003c/p\u003e",
+    "url": "https://www.heroku.com",
+    "formId": "heroku",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "mongo",
+    "name": "MongoDB",
+    "description": "\u003cp\u003eProvides access to MongoDB server status metrics. The provided configuration parameters will be transformed to a mongo url: \u003ccode\u003emongodb://[username[:password]@][host]\u003c/code\u003e.\u003c/p\u003e",
+    "url": "https://www.mongodb.com",
+    "formId": "mongo",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "mysql",
+    "name": "MySQL",
+    "description": "\u003cp\u003eProvides access to MySQL metrics. The provided configuration parameters will be transformed to a mysql url: \u003ccode\u003e[username[:password]@][tcp(host)]/database[?flags]\u003c/code\u003e.\u003c/p\u003e",
+    "url": "https://www.mysql.com",
+    "formId": "mysql",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "nginx",
+    "name": "Nginx",
+    "description": "\u003cp\u003eProvides access to Nginx metrics. In order to collect metrics, module \u003ccode\u003estub_status\u003c/code\u003e must be enabled. See: \u003ca href=\"http://nginx.org/en/docs/http/ngx_http_stub_status_module.html#stub_status\"\u003ehttp://nginx.org/en/docs/http/ngx_http_stub_status_module.html#stub_status\u003c/a\u003e\u003c/p\u003e",
+    "url": "https://www.nginx.com",
+    "formId": "nginx",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "npm",
+    "name": "NPM",
+    "description": "\u003cp\u003eConnects to the NPM registry and imports metrics about provided packages. It also catches license and version changes and reports those as events.\u003c/p\u003e",
+    "url": "https://www.npmjs.com/",
+    "formId": "npm",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "ping",
+    "name": "Ping",
+    "description": "\u003cp\u003eUses ICMP to detect the liveness of configured targets.\u003c/p\u003e",
+    "url": "https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol",
+    "formId": "ping",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "postgres",
+    "name": "PostgreSQL",
+    "description": "\u003cp\u003eProvides access to PostgreSQL metrics. The provided configuration parameters will be transformed to a postgres url: \u003ccode\u003epostgres://[username[:password]@][host]/database[?flags]\u003c/code\u003e.\u003c/p\u003e",
+    "url": "https://www.postgresql.org",
+    "formId": "postgres",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "description": "\u003cp\u003eProvides access to Redis metrics and slow query log entries. The provided configuration parameters will be transformed to a redis url: \u003ccode\u003eredis://[username[:password]@][host]/database[?flags]\u003c/code\u003e.\u003c/p\u003e",
+    "url": "https://redis.io",
+    "formId": "redis",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "description": "\u003cp\u003eCollects Slack metrics.\u003c/p\u003e",
+    "url": "https://slack.com",
+    "formId": "slack",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "spark",
+    "name": "Apache Spark",
+    "description": "\u003cp\u003eThere are two recommended approaches for getting Apache Spark metrics into Axiom:\u003c/p\u003e  \u003col\u003e \u003cli\u003e\u003cp\u003eUse the official \u003ca href=\"https://github.com/prometheus/jmx_exporter\"\u003ePrometheus JMX Exporter\u003c/a\u003e which also has an \u003ca href=\"https://github.com/prometheus/jmx_exporter/blob/master/example_configs/spark.yml\"\u003eexample config for Apache Spark\u003c/a\u003e. The JMX Exporter can be collected by the Prometheus integration.\u003c/p\u003e\u003c/li\u003e  \u003cli\u003e\u003cp\u003eUse the community maintained \u003ca href=\"https://github.com/banzaicloud/spark-metrics/blob/master/PrometheusSink.md\"\u003eprometheus metrics sink\u003c/a\u003e. Metrics will be pushed to a Prometheus Pushgateway and can be collected by the Prometheus integration.\u003c/p\u003e\u003c/li\u003e \u003c/ol\u003e",
+    "url": "https://spark.apache.org",
+    "formId": "spark",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "storm",
+    "name": "Apache Storm",
+    "description": "\u003cp\u003eProvides access to Apache storm metrics. Is is also able to perform HTTP BasicAuth.\u003c/p\u003e",
+    "url": "http://storm.apache.org",
+    "formId": "storm",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "tcp",
+    "name": "TCP Check",
+    "description": "\u003cp\u003eUses TCP to detect the liveness of configured targets.\u003c/p\u003e",
+    "url": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol",
+    "formId": "tcp",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  },
+  {
+    "id": "travis",
+    "name": "Travis CI",
+    "description": "\u003cp\u003eConnects to Travis CI and imports logs and metrics and notifies about running and failing builds.\u003c/p\u003e",
+    "url": "https://travis-ci.org",
+    "formId": "travis",
+    "canPersonnelMessage": false,
+    "canPersonnelCall": false
+  }
+]

@@ -1,0 +1,193 @@
+{
+  "status": {
+    "elapsedTime": 80843,
+    "blocksExamined": 12,
+    "rowsExamined": 523,
+    "rowsMatched": 15,
+    "numGroups": 0,
+    "isPartial": false,
+    "cacheStatus": 1,
+    "minBlockTime": "1970-01-01T00:00:00Z",
+    "maxBlockTime": "2020-08-26T20:59:35.043Z"
+  },
+  "matches": [
+    {
+      "_time": "2020-08-26T15:33:31.648617408Z",
+      "_sysTime": "2020-08-26T15:33:31.651894032Z",
+      "_rowId": "c571d6c8dz9c-465134b6e00006e-62",
+      "data": {
+        "created": "2020-08-26T15:33:31.648035003Z",
+        "dataset": "synth",
+        "id": "2l9qDHasyanCptK0r7",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-08-26T15:33:29.17Z",
+          "filter": {
+            "field": "",
+            "op": ""
+          },
+          "limit": 1000,
+          "resolution": "auto",
+          "startTime": "2020-08-26T12:33:29.17Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-08-26T15:30:42.465024187Z",
+      "_sysTime": "2020-08-26T15:30:42.470053048Z",
+      "_rowId": "c571b0m8uf97-46191dde500016a-66",
+      "data": {
+        "created": "2020-08-26T15:30:42.463215872Z",
+        "dataset": "synth",
+        "id": "MEZ1VurJCSpwCtJCpF",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "argument": null,
+              "op": "count",
+              "field": ""
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-08-26T15:30:40.996Z",
+          "filter": {
+            "field": "",
+            "op": ""
+          },
+          "limit": 0,
+          "resolution": "auto",
+          "startTime": "2020-08-26T12:30:40.996Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-08-20T22:34:42.108684591Z",
+      "_sysTime": "2020-08-20T22:34:42.112628069Z",
+      "_rowId": "c526kdr8jfhr-46191dde500016a-4c",
+      "data": {
+        "created": "2020-08-20T22:34:42.10979955Z",
+        "dataset": "metrics",
+        "id": "Jq1RXVuvr9xXIKcSWT",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "count",
+              "field": "",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-08-20T22:34:39.61Z",
+          "filter": {
+            "field": "",
+            "op": ""
+          },
+          "groupBy": [
+            "hostname"
+          ],
+          "limit": 20,
+          "resolution": "auto",
+          "startTime": "2020-05-22T22:34:39.61Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-08-20T22:34:33.367759594Z",
+      "_sysTime": "2020-08-20T22:34:33.371340075Z",
+      "_rowId": "c526k9qof2lm-46191dde500016a-4b",
+      "data": {
+        "created": "2020-08-20T22:34:33.368988909Z",
+        "dataset": "metrics",
+        "id": "XICLCsNaFrK6n0ripM",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "field": "",
+              "argument": null,
+              "op": "count"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-08-20T22:34:32.215Z",
+          "filter": {
+            "field": "",
+            "op": ""
+          },
+          "groupBy": [
+            "hostname"
+          ],
+          "limit": 20,
+          "resolution": "auto",
+          "startTime": "2020-08-20T22:04:32.214Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-08-20T14:26:05.193462648Z",
+      "_sysTime": "2020-08-20T14:26:05.197118373Z",
+      "_rowId": "c51w69r25nco-46191dde400026f-42",
+      "data": {
+        "created": "2020-08-20T14:26:05.192867144Z",
+        "dataset": "github-create-event",
+        "id": "AzgEkqC2ZOhFRcbpMN",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-08-20T14:26:03.859Z",
+          "filter": {
+            "field": "",
+            "op": ""
+          },
+          "limit": 1000,
+          "resolution": "auto",
+          "startTime": "2020-08-20T13:56:03.859Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-08-20T14:04:05.618954811Z",
+      "_sysTime": "2020-08-20T14:04:05.62229604Z",
+      "_rowId": "c51vpfjpkcor-465134b6e00006e-38",
+      "data": {
+        "created": "2020-08-20T14:04:05.618967992Z",
+        "dataset": "github-commit-comment-event",
+        "id": "3HQXpKqRQ6pgyLP95f",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-08-20T14:04:04.267Z",
+          "filter": {
+            "field": "",
+            "op": ""
+          },
+          "limit": 1000,
+          "resolution": "auto",
+          "startTime": "2020-08-20T13:34:04.267Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    }
+  ],
+  "buckets": {
+    "series": [],
+    "totals": []
+  }
+}

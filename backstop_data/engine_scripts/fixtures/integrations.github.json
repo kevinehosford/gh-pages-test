@@ -1,0 +1,61 @@
+{
+  "id": "github",
+  "name": "GitHub",
+  "description": "\u003cp\u003eConnects to GitHub and collects events and metrics from repositories.\u003c/p\u003e",
+  "url": "https://github.com",
+  "formId": "github",
+  "properties": [
+    {
+      "id": "AccessToken",
+      "name": "Access Token",
+      "kind": "string",
+      "description": "\u003cp\u003eCreate an Access Token in the \u003ca href=\"https://github.com/settings/tokens\"\u003eGitHub Settings\u003c/a\u003e and make sure it has \u003ccode\u003erepo\u003c/code\u003e scope. If you want to have webhooks automatically set up, it also needs \u003ccode\u003eadmin:repo_hook\u003c/code\u003e permissions.\u003c/p\u003e ",
+      "defaultValue": "",
+      "hint": "",
+      "typeHint": "password",
+      "options": {}
+    },
+    {
+      "id": "Repositories",
+      "name": "Repositories",
+      "kind": "[]string",
+      "description": "",
+      "defaultValue": "",
+      "hint": "facebook/react",
+      "typeHint": "",
+      "options": {}
+    },
+    {
+      "id": "APIEndpoint",
+      "name": "API Endpoint",
+      "kind": "string",
+      "description": "\u003cp\u003eChange this if you use GitHub Enterprise.\u003c/p\u003e ",
+      "defaultValue": "https://api.github.com",
+      "hint": "https://api.github.com",
+      "typeHint": "",
+      "options": {}
+    },
+    {
+      "id": "WebhookEnabled",
+      "name": "Webhook enabled",
+      "kind": "bool",
+      "description": "\u003cp\u003eIf enabled, Axiom will try to automatically create the webhooks in your GitHub repositories. \u003cstrong\u003ePolling for events will be disabled for this configuration\u003c/strong\u003e, so make sure you have access to those repositories.\u003c/p\u003e ",
+      "defaultValue": "",
+      "hint": "",
+      "typeHint": "",
+      "options": {}
+    },
+    {
+      "id": "WebhookSecret",
+      "name": "Webhook secret",
+      "kind": "string",
+      "description": "\u003cp\u003eOnly required if webhooks are enabled.\u003c/p\u003e ",
+      "defaultValue": "",
+      "hint": "",
+      "typeHint": "",
+      "options": {}
+    }
+  ],
+  "canPersonnelMessage": false,
+  "canPersonnelCall": false
+}

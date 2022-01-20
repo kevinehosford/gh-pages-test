@@ -1,0 +1,21 @@
+{
+  "deploymentId": "D322EG5ITPU0VSABBDKL9N113NRI4MSQFE4APUJUNC3I0DF2PNGG",
+  "name": "play-axiom-co",
+  "description": "",
+  "slug": "play-axiom--jy6",
+  "organizationId": "axiom-sxxy",
+  "licenceTier": "basic",
+  "updateChannel": "stable",
+  "created": "2020-07-23T23:05:44.794528Z",
+  "expiry": "2020-11-10T03:17:41.808571Z",
+  "uiVersion": "v0.17.0-dev+53c91ac76",
+  "dbVersion": "debug+df3020b7",
+  "peakDBs": 4,
+  "peakUIs": 2,
+  "metrics": {
+    "ingestedBytes": 1116939844552942,
+    "ingestedEvents": 2176440386569,
+    "numQueries": 23908647,
+    "averageBytesPerSec": 3447345199.2374754
+  }
+}

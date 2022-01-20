@@ -1,0 +1,9 @@
+[
+  {
+    "id": "5a9ad727b3e0bfbbd85d3240b03f01edcfcf5979b249fe6861e0b65d509321fd",
+    "name": "pusher",
+    "scopes": [
+      "*"
+    ]
+  }
+]

@@ -1,0 +1,5137 @@
+[
+  {
+    "name": "aks",
+    "numBlocks": 6,
+    "numEvents": 62510,
+    "numFields": 49,
+    "inputBytes": 96646859,
+    "inputBytesHuman": "97 MB",
+    "compressedBytes": 2156265,
+    "compressedBytesHuman": "2.2 MB",
+    "minTime": "2021-04-14T14:29:34Z",
+    "maxTime": "2021-04-26T15:29:31Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "stream",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.ephemeral_id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.hostname",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.availability_zone",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.provider",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.region",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.account.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.image.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.instance.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.instance.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.machine.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "container.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "container.runtime",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "container.image.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "ecs.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "input.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.namespace",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.container.image",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.container.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.app",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.app_kubernetes_io/name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.component",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.controller-revision-hash",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.eks_amazonaws_com/component",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.io_cilium/app",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.k8s-app",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.kubernetes_azure_com/managedby",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.kubernetes_io/cluster-service",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.pod-template-generation",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.pod-template-hash",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.role",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.rsName",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.tier",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.node.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.pod.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.pod.uid",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.replicaset.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "log.offset",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "log.file.path",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-04-14T16:01:59.249946413Z",
+    "who": ""
+  },
+  {
+    "name": "autoscaler",
+    "numBlocks": 135,
+    "numEvents": 177612,
+    "numFields": 29,
+    "inputBytes": 92127483,
+    "inputBytesHuman": "92 MB",
+    "compressedBytes": 12660878,
+    "compressedBytesHuman": "13 MB",
+    "minTime": "2020-12-27T14:09:48Z",
+    "maxTime": "2021-09-16T16:26:17Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "insertId",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "logName",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "receiveTimestamp",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "timestamp",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.decision.decideTime",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.decision.eventId",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.decision.scaleDown.nodesToBeRemoved",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.decision.scaleUp.increasedMigs",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.decision.scaleUp.triggeringPods",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.decision.scaleUp.triggeringPodsTotalCount",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.noDecisionStatus.measureTime",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.noDecisionStatus.noScaleDown.nodes",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.noDecisionStatus.noScaleDown.nodesTotalCount",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.noDecisionStatus.noScaleDown.reason.messageId",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.noDecisionStatus.noScaleUp.skippedMigs",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.noDecisionStatus.noScaleUp.unhandledPodGroups",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.noDecisionStatus.noScaleUp.unhandledPodGroupsTotalCount",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.noDecisionStatus.noScaleUp.napFailureReason.messageId",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.resultInfo.measureTime",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.resultInfo.results",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.status.autoscaledNodesCount",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.status.autoscaledNodesTarget",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "jsonPayload.status.measureTime",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "resource.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "resource.labels.cluster_name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "resource.labels.location",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "resource.labels.project_id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-01-26T13:56:20.538874109Z",
+    "who": ""
+  },
+  {
+    "name": "axisynth",
+    "numBlocks": 37908,
+    "numEvents": 2477785835,
+    "numFields": 16,
+    "inputBytes": 1213408468853,
+    "inputBytesHuman": "1.2 TB",
+    "compressedBytes": 100859151478,
+    "compressedBytesHuman": "101 GB",
+    "minTime": "2020-11-16T16:10:45Z",
+    "maxTime": "2021-09-16T16:26:49Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "content_type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "is_tls",
+        "type": "boolean",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "level",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "method",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "req_duration_ms",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "resp_body_size_bytes",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "resp_header_size_bytes",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "server_datacenter",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "uri",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "user_agent",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "geo.city",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "geo.country",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2020-11-30T16:28:31.758070823Z",
+    "who": ""
+  },
+  {
+    "name": "azure",
+    "numBlocks": 43,
+    "numEvents": 2345093,
+    "numFields": 44,
+    "inputBytes": 3657527536,
+    "inputBytesHuman": "3.7 GB",
+    "compressedBytes": 67839506,
+    "compressedBytesHuman": "68 MB",
+    "minTime": "2021-04-15T11:00:37Z",
+    "maxTime": "2021-05-18T18:00:24Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "stream",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.ephemeral_id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.hostname",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.availability_zone",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.provider",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.region",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.account.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.image.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.instance.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.instance.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.machine.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "container.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "container.runtime",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "container.image.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "ecs.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "input.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.namespace",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.container.image",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.container.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.app_kubernetes_io/name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.component",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.controller-revision-hash",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.k8s-app",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.kubernetes_azure_com/managedby",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.kubernetes_io/cluster-service",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.pod-template-generation",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.pod-template-hash",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.rsName",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.tier",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.node.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.pod.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.pod.uid",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.replicaset.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "log.offset",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "log.file.path",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-04-15T10:42:48.598791642Z",
+    "who": ""
+  },
+  {
+    "name": "digitalocean",
+    "numBlocks": 2,
+    "numEvents": 324,
+    "numFields": 33,
+    "inputBytes": 461473,
+    "inputBytesHuman": "462 kB",
+    "compressedBytes": 49243,
+    "compressedBytesHuman": "49 kB",
+    "minTime": "2021-04-26T15:29:13Z",
+    "maxTime": "2021-04-26T15:34:56Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "stream",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.ephemeral_id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.hostname",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.provider",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.region",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.instance.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "container.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "container.runtime",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "container.image.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "ecs.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "input.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.namespace",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.container.image",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.container.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.controller-revision-hash",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.k8s-app",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.kubernetes_io/cluster-service",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.pod-template-generation",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.pod-template-hash",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.node.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.pod.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.pod.uid",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.replicaset.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "log.offset",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "log.file.path",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-04-26T15:28:42.727734774Z",
+    "who": ""
+  },
+  {
+    "name": "empty-dataset",
+    "numBlocks": 0,
+    "numEvents": 0,
+    "numFields": 2,
+    "inputBytes": 0,
+    "inputBytesHuman": "0 B",
+    "compressedBytes": 0,
+    "compressedBytesHuman": "0 B",
+    "minTime": "0001-01-01T00:00:00Z",
+    "maxTime": "0001-01-01T00:00:00Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-03-11T20:26:59.08012494Z",
+    "who": ""
+  },
+  {
+    "name": "filebeat-logs",
+    "numBlocks": 3,
+    "numEvents": 857,
+    "numFields": 81,
+    "inputBytes": 765923,
+    "inputBytesHuman": "766 kB",
+    "compressedBytes": 83260,
+    "compressedBytesHuman": "83 kB",
+    "minTime": "2021-06-03T14:01:50Z",
+    "maxTime": "2021-06-08T16:19:50Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.ephemeral_id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.hostname",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.bytes",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.ip",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.mac",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.packets",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.port",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "ecs.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "error.message",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "error.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.action",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.category",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.dataset",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.duration",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.end",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.kind",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.start",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "flow.final",
+        "type": "boolean",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "flow.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.mime_type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.status_code",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.body.bytes",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.body.hash",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.headers.Accept-Ranges",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.headers.Age",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.headers.Cache-Control",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.headers.Content-Length",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.headers.Content-Type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.headers.Date",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.headers.Etag",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.headers.Expires",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.headers.Last-Modified",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.headers.Server",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.headers.Vary",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.response.headers.X-Cache",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.rtt.content.us",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.rtt.response_header.us",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.rtt.total.us",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.rtt.validate.us",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "http.rtt.write_request.us",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "input.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "log.offset",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "log.file.path",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "monitor.check_group",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "monitor.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "monitor.ip",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "monitor.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "monitor.status",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "monitor.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "monitor.duration.us",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "monitor.timespan.gte",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "monitor.timespan.lt",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.bytes",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.community_id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.packets",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.transport",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "resolve.ip",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "resolve.rtt.us",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "service.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.bytes",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.ip",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.mac",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.packets",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.port",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "summary.down",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "summary.up",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "tcp.rtt.connect.us",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "url.domain",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "url.full",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "url.port",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "url.scheme",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-06-03T13:31:24.051636812Z",
+    "who": "2203218c-c8fe-4e91-af1b-ecc986e78de0"
+  },
+  {
+    "name": "fluentd",
+    "numBlocks": 0,
+    "numEvents": 0,
+    "numFields": 2,
+    "inputBytes": 0,
+    "inputBytesHuman": "0 B",
+    "compressedBytes": 0,
+    "compressedBytesHuman": "0 B",
+    "minTime": "0001-01-01T00:00:00Z",
+    "maxTime": "0001-01-01T00:00:00Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-07-24T02:17:42.169770377Z",
+    "who": "2203218c-c8fe-4e91-af1b-ecc986e78de0"
+  },
+  {
+    "name": "github-push-event",
+    "numBlocks": 1432,
+    "numEvents": 91375063,
+    "numFields": 11,
+    "inputBytes": 54809140629,
+    "inputBytesHuman": "55 GB",
+    "compressedBytes": 13504496854,
+    "compressedBytesHuman": "14 GB",
+    "minTime": "2020-11-30T16:26:50Z",
+    "maxTime": "2021-02-17T18:15:11Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "actor",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "before",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "commits",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "head",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "push_id",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "ref",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "repo",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "size",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2020-11-30T16:31:56.309604569Z",
+    "who": ""
+  },
+  {
+    "name": "gitlab-jobs",
+    "numBlocks": 70,
+    "numEvents": 54321,
+    "numFields": 51,
+    "inputBytes": 80419998,
+    "inputBytesHuman": "80 MB",
+    "compressedBytes": 5241865,
+    "compressedBytesHuman": "5.2 MB",
+    "minTime": "2021-03-01T16:50:22Z",
+    "maxTime": "2021-08-05T11:09:57Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "before_sha",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "build_allow_failure",
+        "type": "boolean",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "build_created_at",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "build_duration",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "build_failure_reason",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "build_finished_at",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "build_id",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "build_name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "build_queued_duration",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "build_stage",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "build_started_at",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "build_status",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "object_kind",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "pipeline_id",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "project_id",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "project_name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "ref",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "sha",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "tag",
+        "type": "boolean",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "commit.author_email",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "commit.author_name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "commit.author_url",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "commit.duration",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "commit.finished_at",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "commit.id",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "commit.message",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "commit.sha",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "commit.started_at",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "commit.status",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "environment.action",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "environment.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "repository.description",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "repository.git_http_url",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "repository.git_ssh_url",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "repository.homepage",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "repository.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "repository.url",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "repository.visibility_level",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "runner.active",
+        "type": "boolean",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "runner.description",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "runner.id",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "runner.is_shared",
+        "type": "boolean",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "runner.runner_type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "runner.tags",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "user.avatar_url",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "user.email",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "user.id",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "user.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "user.username",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-03-01T16:26:30.148871779Z",
+    "who": ""
+  },
+  {
+    "name": "ibmkubernetes",
+    "numBlocks": 0,
+    "numEvents": 0,
+    "numFields": 2,
+    "inputBytes": 0,
+    "inputBytesHuman": "0 B",
+    "compressedBytes": 0,
+    "compressedBytesHuman": "0 B",
+    "minTime": "0001-01-01T00:00:00Z",
+    "maxTime": "0001-01-01T00:00:00Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-08-04T11:57:39.612875614Z",
+    "who": "2203218c-c8fe-4e91-af1b-ecc986e78de0"
+  },
+  {
+    "name": "internal-events",
+    "numBlocks": 37,
+    "numEvents": 12393,
+    "numFields": 11,
+    "inputBytes": 4167796,
+    "inputBytesHuman": "4.2 MB",
+    "compressedBytes": 651256,
+    "compressedBytesHuman": "651 kB",
+    "minTime": "2020-12-10T12:45:34Z",
+    "maxTime": "2021-02-01T11:18:56Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "body",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "priority",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "snoozed_until",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "state",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-01-20T17:06:24.975804573Z",
+    "who": ""
+  },
+  {
+    "name": "internal-metrics",
+    "numBlocks": 141,
+    "numEvents": 963144,
+    "numFields": 11,
+    "inputBytes": 0,
+    "inputBytesHuman": "0 B",
+    "compressedBytes": 8757789,
+    "compressedBytesHuman": "8.8 MB",
+    "minTime": "2021-02-16T15:28:43Z",
+    "maxTime": "2021-09-16T16:26:50Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "node.bytesIngested",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "node.datasetInfo",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "node.hostname",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "node.numRequests",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "node.queryDuration",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "node.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "node.info.numVCPUs",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "node.info.totalLocalStorage",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "node.info.totalMemory",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "1970-01-01T00:00:00Z",
+    "who": ""
+  },
+  {
+    "name": "k8s-logs",
+    "numBlocks": 573,
+    "numEvents": 31841111,
+    "numFields": 57,
+    "inputBytes": 48048626874,
+    "inputBytesHuman": "48 GB",
+    "compressedBytes": 965030914,
+    "compressedBytesHuman": "965 MB",
+    "minTime": "2020-06-10T13:46:56Z",
+    "maxTime": "2021-09-16T16:26:51Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "stream",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.ephemeral_id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.hostname",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.availability_zone",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.provider",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.region",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.account.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.image.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.instance.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.instance.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "cloud.machine.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "ecs.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.architecture",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.containerized",
+        "type": "boolean",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.hostname",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.ip",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.mac",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.os.codename",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.os.family",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.os.kernel",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.os.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.os.platform",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.os.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "input.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.namespace",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.container.image",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.container.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.alertmanager",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.app",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.app_kubernetes_io/component",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.app_kubernetes_io/instance",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.app_kubernetes_io/managed-by",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.app_kubernetes_io/name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.app_kubernetes_io/version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.controller-revision-hash",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.eks_amazonaws_com/component",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.helm_sh/chart",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.k8s-app",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.pod-template-generation",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.pod-template-hash",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.prometheus",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.labels.statefulset_kubernetes_io/pod-name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.node.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.pod.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.pod.uid",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.replicaset.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "kubernetes.statefulset.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "log.offset",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "log.file.path",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-02-16T18:09:34.025447028Z",
+    "who": ""
+  },
+  {
+    "name": "logs",
+    "numBlocks": 413,
+    "numEvents": 24384747,
+    "numFields": 8,
+    "inputBytes": 4935664475,
+    "inputBytesHuman": "4.9 GB",
+    "compressedBytes": 256056540,
+    "compressedBytesHuman": "256 MB",
+    "minTime": "2020-11-30T16:31:51Z",
+    "maxTime": "2021-02-17T18:20:12Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "dataset",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "exec",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "hostname",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "level",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "pid",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2020-11-30T16:31:48.224865148Z",
+    "who": ""
+  },
+  {
+    "name": "memcached",
+    "numBlocks": 3,
+    "numEvents": 4332,
+    "numFields": 35,
+    "inputBytes": 3717739,
+    "inputBytesHuman": "3.7 MB",
+    "compressedBytes": 195388,
+    "compressedBytesHuman": "195 kB",
+    "minTime": "2021-07-13T12:49:40Z",
+    "maxTime": "2021-07-14T12:42:40Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.ephemeral_id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.hostname",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.bytes",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.ip",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.mac",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.packets",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.port",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "ecs.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.action",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.category",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.dataset",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.duration",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.end",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.kind",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.start",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "flow.final",
+        "type": "boolean",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "flow.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.bytes",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.community_id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.packets",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.transport",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.bytes",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.ip",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.mac",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.packets",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.port",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-07-13T12:38:55.47603731Z",
+    "who": "2203218c-c8fe-4e91-af1b-ecc986e78de0"
+  },
+  {
+    "name": "metrics",
+    "numBlocks": 280,
+    "numEvents": 15250337,
+    "numFields": 8,
+    "inputBytes": 2819590851,
+    "inputBytesHuman": "2.8 GB",
+    "compressedBytes": 219204330,
+    "compressedBytesHuman": "219 MB",
+    "minTime": "2020-11-30T16:31:51Z",
+    "maxTime": "2021-02-17T18:20:12Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "dataset",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "exec",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "hostname",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "pid",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "value",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2020-11-30T16:31:51.53209933Z",
+    "who": ""
+  },
+  {
+    "name": "redis-memory",
+    "numBlocks": 3,
+    "numEvents": 82435,
+    "numFields": 35,
+    "inputBytes": 73785140,
+    "inputBytesHuman": "74 MB",
+    "compressedBytes": 1371755,
+    "compressedBytesHuman": "1.4 MB",
+    "minTime": "2021-06-08T16:22:30Z",
+    "maxTime": "2021-06-08T18:41:06Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.ephemeral_id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.hostname",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "agent.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.bytes",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.ip",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.mac",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.packets",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "destination.port",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "ecs.version",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.action",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.category",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.dataset",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.duration",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.end",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.kind",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "event.start",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "flow.final",
+        "type": "boolean",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "flow.id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "host.name",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.bytes",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.community_id",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.packets",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.transport",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "network.type",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.bytes",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.ip",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.mac",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.packets",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source.port",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-06-08T16:21:30.447155378Z",
+    "who": "2203218c-c8fe-4e91-af1b-ecc986e78de0"
+  },
+  {
+    "name": "rocketloop-apm",
+    "numBlocks": 1,
+    "numEvents": 1,
+    "numFields": 6,
+    "inputBytes": 84,
+    "inputBytesHuman": "84 B",
+    "compressedBytes": 1116,
+    "compressedBytesHuman": "1.1 kB",
+    "minTime": "2021-03-24T13:48:12Z",
+    "maxTime": "2021-03-24T13:48:12Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "duration_ms",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "method",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "path",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "res_size_bytes",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-03-24T13:28:29.116917718Z",
+    "who": ""
+  },
+  {
+    "name": "rocketloop-syslog",
+    "numBlocks": 0,
+    "numEvents": 0,
+    "numFields": 2,
+    "inputBytes": 0,
+    "inputBytesHuman": "0 B",
+    "compressedBytes": 0,
+    "compressedBytesHuman": "0 B",
+    "minTime": "0001-01-01T00:00:00Z",
+    "maxTime": "0001-01-01T00:00:00Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-03-24T13:28:07.343328352Z",
+    "who": ""
+  },
+  {
+    "name": "service-logs",
+    "numBlocks": 0,
+    "numEvents": 0,
+    "numFields": 2,
+    "inputBytes": 0,
+    "inputBytesHuman": "0 B",
+    "compressedBytes": 0,
+    "compressedBytesHuman": "0 B",
+    "minTime": "0001-01-01T00:00:00Z",
+    "maxTime": "0001-01-01T00:00:00Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-03-17T10:33:34.154080915Z",
+    "who": ""
+  },
+  {
+    "name": "trump-tweets",
+    "numBlocks": 2,
+    "numEvents": 7020,
+    "numFields": 10,
+    "inputBytes": 2950892,
+    "inputBytesHuman": "3.0 MB",
+    "compressedBytes": 657693,
+    "compressedBytesHuman": "658 kB",
+    "minTime": "2018-01-09T23:07:09Z",
+    "maxTime": "2021-02-11T22:36:45Z",
+    "fields": [
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "created_at",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "favorite_count",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "id_str",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "in_reply_to_user_id_str",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "is_retweet",
+        "type": "boolean",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "retweet_count",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "source",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "text",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-02-11T21:45:29.943624796Z",
+    "who": ""
+  },
+  {
+    "name": "values",
+    "numBlocks": 3,
+    "numEvents": 944,
+    "numFields": 176,
+    "inputBytes": 2042872,
+    "inputBytesHuman": "2.0 MB",
+    "compressedBytes": 180762,
+    "compressedBytesHuman": "181 kB",
+    "minTime": "2021-06-21T03:53:26Z",
+    "maxTime": "2021-06-23T15:21:03Z",
+    "fields": [
+      {
+        "name": "WARNING_UPGRADE_TO_V6",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_sysTime",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "_time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "base",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "block_index",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "date",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "events",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "hash",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "height",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "provider",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "terms",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "time",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "time_last_updated",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "txIndexes",
+        "type": "array",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "labels.author",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "labels.model",
+        "type": "string",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.AED",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.AFN",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.ALL",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.AMD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.ANG",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.AOA",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.ARS",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.AUD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.AWG",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.AZN",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BAM",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BBD",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BDT",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BGN",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BHD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BIF",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BMD",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BND",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BOB",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BRL",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BSD",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BTN",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BWP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BYN",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.BZD",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.CAD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.CDF",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.CHF",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.CLP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.CNY",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.COP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.CRC",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.CUC",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.CUP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.CVE",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.CZK",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.DJF",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.DKK",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.DOP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.DZD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.EGP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.ERN",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.ETB",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.EUR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.FJD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.FKP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.FOK",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.GBP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.GEL",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.GGP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.GHS",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.GIP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.GMD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.GNF",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.GTQ",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.GYD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.HKD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.HNL",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.HRK",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.HTG",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.HUF",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.IDR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.ILS",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.IMP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.INR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.IQD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.IRR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.ISK",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.JMD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.JOD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.JPY",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.KES",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.KGS",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.KHR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.KID",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.KMF",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.KRW",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.KWD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.KYD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.KZT",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.LAK",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.LBP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.LKR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.LRD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.LSL",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.LYD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.MAD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.MDL",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.MGA",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.MKD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.MMK",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.MNT",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.MOP",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.MRU",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.MUR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.MVR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.MWK",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.MXN",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.MYR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.MZN",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.NAD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.NGN",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.NIO",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.NOK",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.NPR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.NZD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.OMR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.PAB",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.PEN",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.PGK",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.PHP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.PKR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.PLN",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.PYG",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.QAR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.RON",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.RSD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.RUB",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.RWF",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.SAR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.SBD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.SCR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.SDG",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.SEK",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.SGD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.SHP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.SLL",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.SOS",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.SRD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.SSP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.STN",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.SYP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.SZL",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.THB",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.TJS",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.TMT",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.TND",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.TOP",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.TRY",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.TTD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.TVD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.TWD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.TZS",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.UAH",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.UGX",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.USD",
+        "type": "integer",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.UYU",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.UZS",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.VES",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.VND",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.VUV",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.WST",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.XAF",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.XCD",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.XDR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.XOF",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.XPF",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.YER",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.ZAR",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      },
+      {
+        "name": "rates.ZMW",
+        "type": "float",
+        "unit": "",
+        "hidden": false,
+        "description": ""
+      }
+    ],
+    "created": "2021-06-21T03:50:35.873563312Z",
+    "who": "2203218c-c8fe-4e91-af1b-ecc986e78de0"
+  }
+]

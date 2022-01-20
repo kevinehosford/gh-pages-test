@@ -1,0 +1,29 @@
+{
+  "created": "2020-08-26T21:44:59.510965576Z",
+  "dataset": "synth",
+  "id": "TQOjIEWUzEumXVEbgc",
+  "kind": "analytics",
+  "name": "",
+  "query": {
+    "aggregations": [
+      {
+        "argument": null,
+        "field": "",
+        "op": "count"
+      }
+    ],
+    "cursor": "",
+    "endTime": "2020-08-26T21:44:58.687Z",
+    "filter": {
+      "field": "",
+      "op": ""
+    },
+    "groupBy": [
+      "method"
+    ],
+    "limit": 20,
+    "resolution": "auto",
+    "startTime": "2020-08-26T21:14:58.687Z"
+  },
+  "who": "9b01bf58-a081-4553-b958-ee1541663939"
+}

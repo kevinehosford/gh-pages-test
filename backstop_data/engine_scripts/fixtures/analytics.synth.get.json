@@ -1,0 +1,76 @@
+{
+  "numBlocks": 5676,
+  "numEvents": 371893944,
+  "numFields": 16,
+  "compressedBytes": 43484931541,
+  "compressedBytesHuman": "44 GB",
+  "minTime": "0001-01-01T00:00:00Z",
+  "maxTime": "2040-07-27T14:37:40Z",
+  "fields": [
+    {
+      "name": "_sysTime",
+      "type": "integer"
+    },
+    {
+      "name": "_time",
+      "type": "integer"
+    },
+    {
+      "name": "content_type",
+      "type": "string"
+    },
+    {
+      "name": "id",
+      "type": "integer"
+    },
+    {
+      "name": "is_tls",
+      "type": "string"
+    },
+    {
+      "name": "level",
+      "type": "string"
+    },
+    {
+      "name": "method",
+      "type": "string"
+    },
+    {
+      "name": "req_duration",
+      "type": "float"
+    },
+    {
+      "name": "resp_body_size",
+      "type": "integer"
+    },
+    {
+      "name": "resp_header_size",
+      "type": "integer"
+    },
+    {
+      "name": "server_datacenter",
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "type": "string"
+    },
+    {
+      "name": "time_elapsed",
+      "type": "integer"
+    },
+    {
+      "name": "uri",
+      "type": "string"
+    },
+    {
+      "name": "user_agent_name",
+      "type": "string"
+    },
+    {
+      "name": "city.location",
+      "type": "string"
+    }
+  ],
+  "displayName": "synth"
+}

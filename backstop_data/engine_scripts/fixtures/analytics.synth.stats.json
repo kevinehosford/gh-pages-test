@@ -1,0 +1,364 @@
+{
+  "datasets": [
+    {
+      "name": "metrics",
+      "numBlocks": 162,
+      "numEvents": 8403437,
+      "numFields": 10,
+      "compressedBytes": 1328306629,
+      "compressedBytesHuman": "1.3 GB",
+      "minTime": "2020-07-02T19:06:27Z",
+      "maxTime": "2020-08-17T10:55:18Z",
+      "createdAt": "2020-07-02T18:58:57.602382Z"
+    },
+    {
+      "name": "logs",
+      "numBlocks": 141,
+      "numEvents": 7216893,
+      "numFields": 10,
+      "compressedBytes": 1198904955,
+      "compressedBytesHuman": "1.2 GB",
+      "minTime": "2020-07-02T19:06:26Z",
+      "maxTime": "2020-08-17T10:55:19Z",
+      "createdAt": "2020-07-02T18:58:58.43056Z"
+    },
+    {
+      "name": "axiom-query-history",
+      "numBlocks": 39,
+      "numEvents": 703,
+      "numFields": 21,
+      "compressedBytes": 116827,
+      "compressedBytesHuman": "117 kB",
+      "minTime": "2020-07-03T18:05:23Z",
+      "maxTime": "2020-08-14T18:37:32Z",
+      "createdAt": "2020-07-02T19:01:00.743055Z"
+    },
+    {
+      "name": "axiom-events",
+      "numBlocks": 3,
+      "numEvents": 1353,
+      "numFields": 15,
+      "compressedBytes": 153995,
+      "compressedBytesHuman": "154 kB",
+      "minTime": "2020-07-30T08:37:17Z",
+      "maxTime": "2020-08-12T09:48:29Z",
+      "createdAt": "2020-07-06T15:17:12.666059Z"
+    },
+    {
+      "name": "axiom-logs",
+      "numBlocks": 0,
+      "numEvents": 0,
+      "numFields": 2,
+      "compressedBytes": 0,
+      "compressedBytesHuman": "0 B",
+      "createdAt": "2020-07-06T15:28:58.681336Z"
+    },
+    {
+      "name": "synth",
+      "numBlocks": 5676,
+      "numEvents": 371893944,
+      "numFields": 16,
+      "compressedBytes": 43484931541,
+      "compressedBytesHuman": "44 GB",
+      "minTime": "2017-01-01T00:00:00Z",
+      "maxTime": "2040-07-27T14:37:40Z",
+      "createdAt": "2020-07-20T11:38:44.877356Z"
+    },
+    {
+      "name": "axiom-metrics",
+      "numBlocks": 0,
+      "numEvents": 0,
+      "numFields": 2,
+      "compressedBytes": 0,
+      "compressedBytesHuman": "0 B",
+      "createdAt": "2020-07-27T13:25:51.640758Z"
+    },
+    {
+      "name": "axiom-history",
+      "numBlocks": 9,
+      "numEvents": 197,
+      "numFields": 35,
+      "compressedBytes": 32378,
+      "compressedBytesHuman": "32 kB",
+      "minTime": "2020-07-29T14:13:05Z",
+      "maxTime": "2020-08-12T22:29:18Z",
+      "createdAt": "2020-07-27T13:25:51.687635Z"
+    },
+    {
+      "name": "integrations-postgres-SotapSFw2Z6hbeju5C-metrics",
+      "numBlocks": 3,
+      "numEvents": 1542,
+      "numFields": 6,
+      "compressedBytes": 90978,
+      "compressedBytesHuman": "91 kB",
+      "minTime": "2020-08-04T10:04:27Z",
+      "maxTime": "2020-08-04T11:35:50Z",
+      "createdAt": "2020-08-04T10:04:27.029185Z"
+    },
+    {
+      "name": "integrations-postgres-SotapSFw2Z6hbeju5C-logs",
+      "numBlocks": 0,
+      "numEvents": 0,
+      "numFields": 2,
+      "compressedBytes": 0,
+      "compressedBytesHuman": "0 B",
+      "createdAt": "2020-08-04T10:04:27.810454Z"
+    },
+    {
+      "name": "integrations-postgres-metrics",
+      "numBlocks": 3,
+      "numEvents": 1200,
+      "numFields": 6,
+      "compressedBytes": 70800,
+      "compressedBytesHuman": "71 kB",
+      "minTime": "2020-08-04T11:54:34Z",
+      "maxTime": "2020-08-06T17:36:01Z",
+      "createdAt": "2020-08-04T11:54:34.062955Z"
+    },
+    {
+      "name": "integrations-postgres-logs",
+      "numBlocks": 0,
+      "numEvents": 0,
+      "numFields": 2,
+      "compressedBytes": 0,
+      "compressedBytesHuman": "0 B",
+      "createdAt": "2020-08-04T11:54:34.937935Z"
+    },
+    {
+      "name": "integrations-travis-metrics",
+      "numBlocks": 0,
+      "numEvents": 0,
+      "numFields": 2,
+      "compressedBytes": 0,
+      "compressedBytesHuman": "0 B",
+      "createdAt": "2020-08-04T12:07:25.929305Z"
+    },
+    {
+      "name": "integrations-travis-logs",
+      "numBlocks": 0,
+      "numEvents": 0,
+      "numFields": 2,
+      "compressedBytes": 0,
+      "compressedBytesHuman": "0 B",
+      "createdAt": "2020-08-04T12:07:26.866811Z"
+    },
+    {
+      "name": "github-gollum-event",
+      "numBlocks": 54,
+      "numEvents": 3268563,
+      "numFields": 6,
+      "compressedBytes": 143885780,
+      "compressedBytesHuman": "144 MB",
+      "minTime": "2019-06-01T00:00:24Z",
+      "maxTime": "2020-08-17T08:59:54Z",
+      "createdAt": "2020-08-06T09:24:00.069927Z"
+    },
+    {
+      "name": "github-release-event",
+      "numBlocks": 60,
+      "numEvents": 3703709,
+      "numFields": 41,
+      "compressedBytes": 5667141294,
+      "compressedBytesHuman": "5.7 GB",
+      "minTime": "2019-06-01T00:00:13Z",
+      "maxTime": "2020-08-17T08:59:49Z",
+      "createdAt": "2020-08-06T09:24:00.335552Z"
+    },
+    {
+      "name": "github-public-event",
+      "numBlocks": 44,
+      "numEvents": 2600923,
+      "numFields": 5,
+      "compressedBytes": 118362629,
+      "compressedBytesHuman": "118 MB",
+      "minTime": "2019-06-01T00:01:19Z",
+      "maxTime": "2020-08-17T08:59:58Z",
+      "createdAt": "2020-08-06T09:24:00.4918Z"
+    },
+    {
+      "name": "github-fork-event",
+      "numBlocks": 335,
+      "numEvents": 21751436,
+      "numFields": 8,
+      "compressedBytes": 1982100542,
+      "compressedBytesHuman": "2.0 GB",
+      "minTime": "2019-06-01T00:00:05Z",
+      "maxTime": "2020-08-25T13:06:59Z",
+      "createdAt": "2020-08-06T09:24:00.507425Z"
+    },
+    {
+      "name": "github-issues-event",
+      "numBlocks": 409,
+      "numEvents": 26621811,
+      "numFields": 22,
+      "compressedBytes": 31128716072,
+      "compressedBytesHuman": "31 GB",
+      "minTime": "2019-06-01T00:00:03Z",
+      "maxTime": "2020-08-26T15:24:08Z",
+      "createdAt": "2020-08-06T09:24:00.616801Z"
+    },
+    {
+      "name": "github-delete-event",
+      "numBlocks": 442,
+      "numEvents": 28757224,
+      "numFields": 8,
+      "compressedBytes": 2367596476,
+      "compressedBytesHuman": "2.4 GB",
+      "minTime": "2019-06-01T00:00:02Z",
+      "maxTime": "2020-08-26T15:57:16Z",
+      "createdAt": "2020-08-06T09:24:10.585486Z"
+    },
+    {
+      "name": "github-watch-event",
+      "numBlocks": 890,
+      "numEvents": 58145427,
+      "numFields": 6,
+      "compressedBytes": 2890957703,
+      "compressedBytesHuman": "2.9 GB",
+      "minTime": "2019-06-01T00:00:00Z",
+      "maxTime": "2020-08-26T07:03:11Z",
+      "createdAt": "2020-08-06T09:24:10.773003Z"
+    },
+    {
+      "name": "github-create-event",
+      "numBlocks": 2147,
+      "numEvents": 140574638,
+      "numFields": 10,
+      "compressedBytes": 14484180848,
+      "compressedBytesHuman": "14 GB",
+      "minTime": "2019-06-01T00:00:00Z",
+      "maxTime": "2020-08-26T16:19:58Z",
+      "createdAt": "2020-08-06T09:24:10.913608Z"
+    },
+    {
+      "name": "github-push-event",
+      "numBlocks": 6900,
+      "numEvents": 452019140,
+      "numFields": 11,
+      "compressedBytes": 72720223182,
+      "compressedBytesHuman": "73 GB",
+      "minTime": "2019-06-01T00:00:00Z",
+      "maxTime": "2020-08-26T19:40:52Z",
+      "createdAt": "2020-08-06T09:24:11.866702Z"
+    },
+    {
+      "name": "github-commit-comment-event",
+      "numBlocks": 36,
+      "numEvents": 2078158,
+      "numFields": 35,
+      "compressedBytes": 3238436290,
+      "compressedBytesHuman": "3.2 GB",
+      "minTime": "2019-06-01T00:00:53Z",
+      "maxTime": "2020-08-17T08:59:56Z",
+      "createdAt": "2020-08-06T09:24:20.116602Z"
+    },
+    {
+      "name": "github-pull-request-review-comment-event",
+      "numBlocks": 6,
+      "numEvents": 123,
+      "numFields": 257,
+      "compressedBytes": 1339313,
+      "compressedBytesHuman": "1.3 MB",
+      "minTime": "2019-06-04T13:00:05Z",
+      "maxTime": "2020-08-17T06:36:46Z",
+      "createdAt": "2020-08-06T09:24:20.9291Z"
+    },
+    {
+      "name": "github-issue-comment-event",
+      "numBlocks": 2079,
+      "numEvents": 57580000,
+      "numFields": 219,
+      "compressedBytes": 278816993808,
+      "compressedBytesHuman": "279 GB",
+      "minTime": "2019-06-01T00:00:00Z",
+      "maxTime": "2020-08-26T17:34:01Z",
+      "createdAt": "2020-08-06T09:24:21.069717Z"
+    },
+    {
+      "name": "github-member-event",
+      "numBlocks": 58,
+      "numEvents": 3580718,
+      "numFields": 24,
+      "compressedBytes": 2522746848,
+      "compressedBytesHuman": "2.5 GB",
+      "minTime": "2019-06-01T00:00:20Z",
+      "maxTime": "2020-08-17T08:59:57Z",
+      "createdAt": "2020-08-06T09:24:41.132084Z"
+    },
+    {
+      "name": "github-pull-request-event",
+      "numBlocks": 6,
+      "numEvents": 1235,
+      "numFields": 243,
+      "compressedBytes": 9741169,
+      "compressedBytesHuman": "9.7 MB",
+      "minTime": "2019-06-04T18:26:53Z",
+      "maxTime": "2020-08-17T08:49:13Z",
+      "createdAt": "2020-08-06T09:24:43.14767Z"
+    },
+    {
+      "name": "test",
+      "numBlocks": 1,
+      "numEvents": 1,
+      "numFields": 3,
+      "compressedBytes": 5,
+      "compressedBytesHuman": "5 B",
+      "minTime": "2020-08-10T16:26:12Z",
+      "maxTime": "2020-08-10T16:26:12Z",
+      "createdAt": "2020-08-10T16:26:11.277951Z"
+    },
+    {
+      "name": "integrations-azure-metrics",
+      "numBlocks": 0,
+      "numEvents": 0,
+      "numFields": 2,
+      "compressedBytes": 0,
+      "compressedBytesHuman": "0 B",
+      "createdAt": "2020-08-11T15:33:54.013737Z"
+    },
+    {
+      "name": "integrations-azure-logs",
+      "numBlocks": 0,
+      "numEvents": 0,
+      "numFields": 2,
+      "compressedBytes": 0,
+      "compressedBytesHuman": "0 B",
+      "createdAt": "2020-08-11T15:33:55.263727Z"
+    },
+    {
+      "name": "integrations-aws-metrics",
+      "numBlocks": 3,
+      "numEvents": 24175,
+      "numFields": 36,
+      "compressedBytes": 2193405,
+      "compressedBytesHuman": "2.2 MB",
+      "minTime": "2020-08-11T17:38:56Z",
+      "maxTime": "2020-08-12T10:07:14Z",
+      "createdAt": "2020-08-11T17:38:53.567571Z"
+    },
+    {
+      "name": "integrations-aws-logs",
+      "numBlocks": 3,
+      "numEvents": 4601,
+      "numFields": 6,
+      "compressedBytes": 834994,
+      "compressedBytesHuman": "835 kB",
+      "minTime": "2020-07-01T21:58:52Z",
+      "maxTime": "2020-08-12T10:06:04Z",
+      "createdAt": "2020-08-11T17:38:53.739404Z"
+    },
+    {
+      "name": "github-pull-request-review-event",
+      "numBlocks": 0,
+      "numEvents": 0,
+      "numFields": 2,
+      "compressedBytes": 0,
+      "compressedBytesHuman": "0 B",
+      "createdAt": "2020-08-18T20:08:50.588738Z"
+    }
+  ],
+  "numBlocks": 19509,
+  "numEvents": 1188231151,
+  "compressedBytes": 462108058461,
+  "compressedBytesHuman": "462 GB"
+}

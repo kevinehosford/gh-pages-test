@@ -1,0 +1,73 @@
+{
+  "created": "2020-09-22T17:08:25.080519263Z",
+  "dataset": "arnesynth",
+  "id": "qmJTVpDIt12D5xwTaX",
+  "kind": "analytics",
+  "name": "",
+  "query": {
+    "aggregations": [
+      {
+        "argument": [
+          50,
+          90,
+          99
+        ],
+        "field": "req_duration_ms",
+        "op": "percentiles"
+      },
+      {
+        "argument": 5,
+        "field": "resp_body_size_bytes",
+        "op": "histogram"
+      },
+      {
+        "argument": 3,
+        "field": "server_datacenter",
+        "op": "topk"
+      }
+    ],
+    "cursor": "",
+    "endTime": "2020-09-22T17:08:30Z",
+    "filter": {
+      "children": [
+        {
+          "children": null,
+          "field": "resp_body_size_bytes",
+          "op": "\u003e",
+          "value": 100
+        },
+        {
+          "children": null,
+          "field": "req_duration_ms",
+          "op": "\u003c=",
+          "value": 10000
+        },
+        {
+          "children": [
+            {
+              "children": null,
+              "field": "server_datacenter",
+              "op": "!=",
+              "value": "unknown"
+            },
+            {
+              "children": null,
+              "field": "id",
+              "op": "exists",
+              "value": null
+            }
+          ],
+          "field": "",
+          "op": "or",
+          "value": null
+        }
+      ],
+      "field": "",
+      "op": "and"
+    },
+    "limit": 0,
+    "resolution": "15s",
+    "startTime": "2020-09-22T16:38:15Z"
+  },
+  "who": "fcf4a0cc-5697-4b06-8c03-9b703a16bafb"
+}

@@ -1,0 +1,21 @@
+{
+  "created": "2021-11-18T19:30:15.232098474Z",
+  "dataset": "k8s-logs",
+  "id": "DLCvAjJCrwG-r2s8uf",
+  "kind": "apl",
+  "name": "",
+  "query": {
+    "apl": "['k8s-logs']\n| summarize count() by bin_auto(_time)",
+    "endTime": "2021-11-18T19:30:14.248Z",
+    "queryOptions": {
+      "displayNull": "auto",
+      "endColumn": "39",
+      "endLineNumber": "2",
+      "quickRange": "6h",
+      "startColumn": "0",
+      "startLineNumber": "1"
+    },
+    "startTime": "2021-11-18T19:00:14.248Z"
+  },
+  "who": "fcf4a0cc-5697-4b06-8c03-9b703a16bafb"
+}

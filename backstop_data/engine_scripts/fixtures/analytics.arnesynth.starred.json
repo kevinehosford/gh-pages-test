@@ -1,0 +1,67 @@
+[
+  {
+    "kind": "analytics",
+    "dataset": "arnesynth",
+    "name": "Overflow Percentile",
+    "who": "9b01bf58-a081-4553-b958-ee1541663939",
+    "query": {
+      "aggregations": [
+        {
+          "argument": [
+            95,
+            99,
+            99.9
+          ],
+          "field": "req_duration_ms",
+          "op": "percentiles"
+        }
+      ],
+      "cursor": "",
+      "endTime": "2020-09-16T15:00:00Z",
+      "filter": {
+        "field": "",
+        "op": ""
+      },
+      "limit": 0,
+      "resolution": "30m",
+      "startTime": "2020-09-16T11:30:00Z"
+    },
+    "metadata": {},
+    "id": "hNkqT9vF5bxL6ZvubG",
+    "created": "2020-09-16T15:41:53.527578284Z"
+  },
+  {
+    "kind": "analytics",
+    "dataset": "arnesynth",
+    "name": "Overflow Percentile Grouped/Filtered",
+    "who": "9b01bf58-a081-4553-b958-ee1541663939",
+    "query": {
+      "aggregations": [
+        {
+          "argument": [
+            95,
+            99,
+            99.9
+          ],
+          "field": "req_duration_ms",
+          "op": "percentiles"
+        }
+      ],
+      "startTime": "2020-09-16T11:30:00.000Z",
+      "endTime": "2020-09-16T15:00:00.000Z",
+      "limit": 20,
+      "groupBy": [
+        "server_datacenter"
+      ],
+      "resolution": "30m",
+      "filter": {
+        "field": "method",
+        "op": "==",
+        "value": "GET"
+      }
+    },
+    "metadata": {},
+    "id": "3BBIfivzo2HxyUGbSY",
+    "created": "2020-09-28T18:04:55.716440513Z"
+  }
+]

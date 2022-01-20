@@ -1,0 +1,163 @@
+[
+  {
+    "id": "aks",
+    "name": "aks",
+    "description": "ingest logs from azure into axiom",
+    "created": "2021-04-14T16:01:59.249946413Z",
+    "who": ""
+  },
+  {
+    "id": "autoscaler",
+    "name": "autoscaler",
+    "description": "axiom-dev-envs autoscaler logs",
+    "created": "2021-01-26T13:56:20.538874109Z",
+    "who": ""
+  },
+  {
+    "id": "axisynth",
+    "name": "axisynth",
+    "description": "",
+    "created": "2020-11-30T16:28:31.758070823Z",
+    "who": ""
+  },
+  {
+    "id": "azure",
+    "name": "azure",
+    "description": "deployment ",
+    "created": "2021-04-15T10:42:48.598791642Z",
+    "who": ""
+  },
+  {
+    "id": "digitalocean",
+    "name": "digitalocean",
+    "description": "ingest logs from digitalocean to Axiom",
+    "created": "2021-04-26T15:28:42.727734774Z",
+    "who": ""
+  },
+  {
+    "id": "empty-dataset",
+    "name": "empty-dataset",
+    "description": "",
+    "created": "2021-03-11T20:26:59.08012494Z",
+    "who": ""
+  },
+  {
+    "id": "filebeat-logs",
+    "name": "filebeat-logs",
+    "description": "Shipping logs from filebeat",
+    "created": "2021-06-03T13:31:24.051636812Z",
+    "who": "2203218c-c8fe-4e91-af1b-ecc986e78de0"
+  },
+  {
+    "id": "fluentd",
+    "name": "fluentd",
+    "description": "ingest logs from Fluentd",
+    "created": "2021-07-24T02:17:42.169770377Z",
+    "who": "2203218c-c8fe-4e91-af1b-ecc986e78de0"
+  },
+  {
+    "id": "github-push-event",
+    "name": "github-push-event",
+    "description": "",
+    "created": "2020-11-30T16:31:56.309604569Z",
+    "who": ""
+  },
+  {
+    "id": "gitlab-jobs",
+    "name": "gitlab-jobs",
+    "description": "",
+    "created": "2021-03-01T16:26:30.148871779Z",
+    "who": ""
+  },
+  {
+    "id": "ibmkubernetes",
+    "name": "ibmkubernetes",
+    "description": "ibm Kubernetes ingest",
+    "created": "2021-08-04T11:57:39.612875614Z",
+    "who": "2203218c-c8fe-4e91-af1b-ecc986e78de0"
+  },
+  {
+    "id": "internal-events",
+    "name": "internal-events",
+    "description": "axiom-events",
+    "created": "2021-01-20T17:06:24.975804573Z",
+    "who": ""
+  },
+  {
+    "id": "internal-metrics",
+    "name": "internal-metrics",
+    "description": "axiomdb-metrics",
+    "created": "1970-01-01T00:00:00Z",
+    "who": ""
+  },
+  {
+    "id": "k8s-logs",
+    "name": "k8s-logs",
+    "description": "Logs from the cluster running this",
+    "created": "2021-02-16T18:09:34.025447028Z",
+    "who": ""
+  },
+  {
+    "id": "logs",
+    "name": "logs",
+    "description": "",
+    "created": "2020-11-30T16:31:48.224865148Z",
+    "who": ""
+  },
+  {
+    "id": "memcached",
+    "name": "memcached",
+    "description": "ship events from memcached",
+    "created": "2021-07-13T12:38:55.47603731Z",
+    "who": "2203218c-c8fe-4e91-af1b-ecc986e78de0"
+  },
+  {
+    "id": "metrics",
+    "name": "metrics",
+    "description": "",
+    "created": "2020-11-30T16:31:51.53209933Z",
+    "who": ""
+  },
+  {
+    "id": "redis-memory",
+    "name": "redis-memory",
+    "description": "Capture network performance from Redis memory activity",
+    "created": "2021-06-08T16:21:30.447155378Z",
+    "who": "2203218c-c8fe-4e91-af1b-ecc986e78de0"
+  },
+  {
+    "id": "rocketloop-apm",
+    "name": "rocketloop-apm",
+    "description": "",
+    "created": "2021-03-24T13:28:29.116917718Z",
+    "who": ""
+  },
+  {
+    "id": "rocketloop-syslog",
+    "name": "rocketloop-syslog",
+    "description": "",
+    "created": "2021-03-24T13:28:07.343328352Z",
+    "who": ""
+  },
+  {
+    "id": "service-logs",
+    "name": "service-logs",
+    "description": "",
+    "created": "2021-03-17T10:33:34.154080915Z",
+    "who": ""
+  },
+  {
+    "id": "trump-tweets",
+    "name": "trump-tweets",
+    "description": "Tweets by former social media influencer Donald Trump.",
+    "created": "2021-02-11T21:45:29.943624796Z",
+    "who": ""
+  },
+  {
+    "id": "values",
+    "name": "values",
+    "description": "Get the max and min aggregation",
+    "created": "2021-06-21T03:50:35.873563312Z",
+    "who": "2203218c-c8fe-4e91-af1b-ecc986e78de0"
+  }
+]

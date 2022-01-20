@@ -1,0 +1,1460 @@
+{
+  "status": {
+    "elapsedTime": 1016820,
+    "blocksExamined": 37,
+    "rowsExamined": 942,
+    "rowsMatched": 43,
+    "numGroups": 0,
+    "isPartial": false,
+    "cacheStatus": 1,
+    "minBlockTime": "2020-07-29T14:13:05.615516611Z",
+    "maxBlockTime": "2020-11-01T15:05:40.755179055Z"
+  },
+  "matches": [
+    {
+      "_time": "2020-10-22T13:54:44.751864615Z",
+      "_sysTime": "2020-10-22T13:54:44.758338549Z",
+      "_rowId": "c6jgylg4is6f-48407e3ff000287-0",
+      "data": {
+        "created": "2020-10-22T13:54:44.740136581Z",
+        "dataset": "arnesynth",
+        "id": "B5zmoHn863gWEroZ6I",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "argument": null,
+              "field": "",
+              "op": "count"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-10-22T13:55:00Z",
+          "filter": {
+            "field": "_sysTime",
+            "op": "exists"
+          },
+          "groupBy": [
+            "method"
+          ],
+          "limit": 20,
+          "order": [
+            {
+              "desc": true,
+              "field": "method"
+            }
+          ],
+          "resolution": "1m",
+          "startTime": "2020-10-22T10:54:00Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-10-19T23:04:21.182678793Z",
+      "_sysTime": "2020-10-19T23:04:21.185994809Z",
+      "_rowId": "c6h8rrrwciyx-47e515ee1000285-1",
+      "data": {
+        "created": "2020-10-19T23:04:21.182108698Z",
+        "dataset": "arnesynth",
+        "id": "W3h6kGadaVjcGcj1Vz",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-10-19T23:04:30Z",
+          "filter": {
+            "field": "",
+            "op": "",
+            "value": null
+          },
+          "limit": 1000,
+          "order": [],
+          "resolution": "15s",
+          "startTime": "2020-10-19T22:34:15Z",
+          "virtualFields": []
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-10-14T17:42:54.809088965Z",
+      "_sysTime": "2020-10-14T17:42:54.815771108Z",
+      "_rowId": "c6cssxoddqdh-47e515edf000087-2",
+      "data": {
+        "created": "2020-10-14T17:42:54.808623326Z",
+        "dataset": "arnesynth",
+        "id": "PyIQjVD8iNf6HvRALk",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "argument": null,
+              "field": "",
+              "op": "count"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-10-14T17:43:00Z",
+          "filter": {
+            "field": "",
+            "op": "",
+            "value": null
+          },
+          "groupBy": [
+            "server_datacenter"
+          ],
+          "limit": 20,
+          "resolution": "15s",
+          "startTime": "2020-10-14T17:12:45Z",
+          "virtualFields": []
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-10-14T17:42:29.676588011Z",
+      "_sysTime": "2020-10-14T17:42:29.683195254Z",
+      "_rowId": "c6cssm4q50iz-47e515edf000087-1",
+      "data": {
+        "created": "2020-10-14T17:42:29.676314297Z",
+        "dataset": "arnesynth",
+        "id": "E7eTICSVZsu51jQpdv",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "argument": null,
+              "field": "",
+              "op": "count"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-10-14T17:42:30Z",
+          "filter": {
+            "field": "",
+            "op": "",
+            "value": null
+          },
+          "groupBy": [
+            "server_datacenter"
+          ],
+          "limit": 20,
+          "resolution": "15s",
+          "startTime": "2020-10-14T17:12:15Z",
+          "virtualFields": []
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-10-14T17:36:34.517982491Z",
+      "_sysTime": "2020-10-14T17:36:34.524861328Z",
+      "_rowId": "c6cso2z1vimz-482ea1d07000182-9",
+      "data": {
+        "created": "2020-10-14T17:36:34.517494596Z",
+        "dataset": "arnesynth",
+        "id": "miuQ5IVsPjUhUiM1b4",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "field": "geo.city",
+              "op": "topk",
+              "argument": 10
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-10-14T17:36:45Z",
+          "filter": {
+            "field": "",
+            "op": ""
+          },
+          "groupBy": [
+            "server_datacenter"
+          ],
+          "limit": 20,
+          "resolution": "15s",
+          "startTime": "2020-10-14T17:06:30Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-10-14T17:35:47.077677646Z",
+      "_sysTime": "2020-10-14T17:35:47.084616082Z",
+      "_rowId": "c6csnh6h555a-482ea1d07000182-8",
+      "data": {
+        "created": "2020-10-14T17:35:47.07714255Z",
+        "dataset": "arnesynth",
+        "id": "BrHiGax24LfCyKjRLC",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "argument": 10,
+              "field": "geo.city",
+              "op": "topk"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-10-14T17:35:45Z",
+          "filter": {
+            "field": "",
+            "op": ""
+          },
+          "groupBy": [
+            "server_datacenter"
+          ],
+          "limit": 20,
+          "resolution": "15s",
+          "startTime": "2020-10-14T17:05:45Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-10-14T17:32:57.157818912Z",
+      "_sysTime": "2020-10-14T17:32:57.161412979Z",
+      "_rowId": "c6cslb4b8v1c-482ea1d07000182-7",
+      "data": {
+        "created": "2020-10-14T17:32:57.157298317Z",
+        "dataset": "arnesynth",
+        "id": "H8ZtvqSrC4q2VKvMqm",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "argument": 10,
+              "field": "geo.city",
+              "op": "topk"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-10-14T17:33:00Z",
+          "filter": {
+            "field": "",
+            "op": ""
+          },
+          "groupBy": [
+            "server_datacenter"
+          ],
+          "limit": 20,
+          "resolution": "15s",
+          "startTime": "2020-10-14T17:02:45Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-10-13T20:03:27.44456871Z",
+      "_sysTime": "2020-10-13T20:03:27.45080084Z",
+      "_rowId": "c6c15zyplqiu-47e515ee1000285-0",
+      "data": {
+        "created": "2020-10-13T20:03:27.432746364Z",
+        "dataset": "arnesynth",
+        "id": "MDoHxmfJYuox9iULNP",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-10-13T20:03:30Z",
+          "filter": {
+            "field": "",
+            "op": "",
+            "value": null
+          },
+          "limit": 1000,
+          "order": [
+            {
+              "desc": true,
+              "field": "resp_body_size_bytes"
+            }
+          ],
+          "resolution": "15s",
+          "startTime": "2020-10-13T19:33:15Z",
+          "virtualFields": []
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-10-07T21:19:17.079243926Z",
+      "_sysTime": "2020-10-07T21:19:17.086934758Z",
+      "_rowId": "c66z0sd5b992-478177061000180-4",
+      "data": {
+        "created": "2020-10-07T21:19:17.07873993Z",
+        "dataset": "arnesynth",
+        "id": "BZoZWqHuI380Jks3jr",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-10-07T21:20:00Z",
+          "filter": {
+            "field": "method",
+            "op": "==",
+            "value": "post"
+          },
+          "groupBy": null,
+          "limit": 1000,
+          "resolution": "1m",
+          "startTime": "2020-10-07T15:19:00Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-10-07T21:16:57.625100812Z",
+      "_sysTime": "2020-10-07T21:16:57.631837544Z",
+      "_rowId": "c66yz0atwzrg-478011cd7000283-7",
+      "data": {
+        "created": "2020-10-07T21:16:57.623763463Z",
+        "dataset": "arnesynth",
+        "id": "D2tYSOvpuXNFTQBrjY",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-10-07T21:17:00Z",
+          "filter": {
+            "field": "method",
+            "op": "==",
+            "value": "POST"
+          },
+          "limit": 1000,
+          "resolution": "1m",
+          "startTime": "2020-10-07T15:16:00Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-10-07T21:16:34.103807582Z",
+      "_sysTime": "2020-10-07T21:16:34.107914745Z",
+      "_rowId": "c66yyphty1r2-478177061000180-3",
+      "data": {
+        "created": "2020-10-07T21:16:34.103265986Z",
+        "dataset": "arnesynth",
+        "id": "fOTOU8cajlOPfvQQl7",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-10-07T21:17:00Z",
+          "filter": {
+            "field": "method",
+            "op": "==",
+            "value": "post"
+          },
+          "groupBy": null,
+          "limit": 1000,
+          "resolution": "1m",
+          "startTime": "2020-10-07T15:16:00Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-10-05T20:58:41.255111216Z",
+      "_sysTime": "2020-10-05T20:58:41.25875114Z",
+      "_rowId": "c659bxet3ga8-478176fdb000085-4",
+      "data": {
+        "created": "2020-10-05T20:58:41.254907135Z",
+        "dataset": "arnesynth",
+        "id": "YzayRi0D2DWeuqKqP9",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "count",
+              "field": "",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-10-05T20:58:45Z",
+          "filter": {
+            "field": "method",
+            "op": "exists"
+          },
+          "groupBy": [
+            "status"
+          ],
+          "limit": 20,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-10-05T20:28:30Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-29T18:38:49.512630268Z",
+      "_sysTime": "2020-09-29T18:38:49.520740322Z",
+      "_rowId": "c602lkmizda4-475141392000084-3",
+      "data": {
+        "created": "2020-09-29T18:38:49.512538288Z",
+        "dataset": "arnesynth",
+        "id": "DztDjcodJcZJwihZt2",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "count",
+              "field": "",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-29T18:39:00Z",
+          "filter": {
+            "field": "",
+            "op": ""
+          },
+          "limit": 0,
+          "resolution": "1m",
+          "startTime": "2020-09-29T15:38:00Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-29T18:37:20.488569724Z",
+      "_sysTime": "2020-09-29T18:37:20.492237249Z",
+      "_rowId": "c602kfq8csjg-475141392000084-2",
+      "data": {
+        "created": "2020-09-29T18:37:20.488481914Z",
+        "dataset": "arnesynth",
+        "id": "A2XPBNh0s9YRFFkZkA",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "count",
+              "field": "",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-24T14:51:45Z",
+          "filter": {
+            "field": "",
+            "op": ""
+          },
+          "limit": 0,
+          "resolution": "15s",
+          "startTime": "2020-09-24T14:21:30Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-24T14:51:37.390966586Z",
+      "_sysTime": "2020-09-24T14:51:37.395127906Z",
+      "_rowId": "c5vomw1zmh4q-470df235a000281-13",
+      "data": {
+        "created": "2020-09-24T14:51:37.390376461Z",
+        "dataset": "arnesynth",
+        "id": "A5jD1eWPHXystlMNBs",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-09-24T14:51:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 1000,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-24T14:21:30Z",
+          "virtualFields": null
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-24T13:41:49.360041543Z",
+      "_sysTime": "2020-09-24T13:41:49.368831802Z",
+      "_rowId": "c5vn5g3m55qf-470dec942000083-2c",
+      "data": {
+        "created": "2020-09-24T13:41:49.360801235Z",
+        "dataset": "arnesynth",
+        "id": "MxHnCxgmVcv3KHEmPL",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "field": "",
+              "argument": null,
+              "op": "count"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-21T21:33:45Z",
+          "filter": {
+            "children": null,
+            "field": "_sysTime",
+            "op": "exists"
+          },
+          "groupBy": [
+            "method"
+          ],
+          "limit": 20,
+          "order": [
+            {
+              "field": "method",
+              "desc": true
+            }
+          ],
+          "resolution": "15s",
+          "startTime": "2020-09-21T21:03:30Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-23T16:02:11.254923617Z",
+      "_sysTime": "2020-09-23T16:02:11.259383942Z",
+      "_rowId": "c5uvidgbovoh-470df235a000281-10",
+      "data": {
+        "created": "2020-09-23T16:02:11.254950568Z",
+        "dataset": "arnesynth",
+        "id": "slATYHHEN9U8HGDVCk",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-09-21T21:33:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 20,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-21T21:03:30Z",
+          "virtualFields": null
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-23T16:01:09.893681281Z",
+      "_sysTime": "2020-09-23T16:01:09.897471502Z",
+      "_rowId": "c5uvhl9isi2p-470df235a000281-f",
+      "data": {
+        "created": "2020-09-23T16:01:09.893739518Z",
+        "dataset": "arnesynth",
+        "id": "JXXLkvRCjcvjWItYoM",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "count",
+              "field": "",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-21T21:33:45Z",
+          "filter": {
+            "children": null,
+            "field": "_sysTime",
+            "op": "exists"
+          },
+          "groupBy": [
+            "method"
+          ],
+          "limit": 20,
+          "order": [
+            {
+              "field": "method",
+              "desc": true
+            }
+          ],
+          "resolution": "15s",
+          "startTime": "2020-09-21T21:03:30Z",
+          "virtualFields": null
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-23T15:11:38.075485852Z",
+      "_sysTime": "2020-09-23T15:11:38.083614814Z",
+      "_rowId": "c5uufo12yuu4-470dec942000083-29",
+      "data": {
+        "created": "2020-09-23T15:11:38.076133155Z",
+        "dataset": "arnesynth",
+        "id": "gJdOQ4XW49wo2x0mQh",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "field": "",
+              "argument": null,
+              "op": "count"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-23T15:15:00Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": [
+            "method"
+          ],
+          "limit": 20,
+          "order": null,
+          "resolution": "15m",
+          "startTime": "2020-09-21T15:00:00Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-23T15:10:52.253623877Z",
+      "_sysTime": "2020-09-23T15:10:52.257389505Z",
+      "_rowId": "c5uuf2z9tbut-470dec942000083-28",
+      "data": {
+        "created": "2020-09-23T15:10:52.254301951Z",
+        "dataset": "arnesynth",
+        "id": "UErpVF5kKuM6qbIVAO",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "argument": null,
+              "op": "count",
+              "field": ""
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-23T15:15:00Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 0,
+          "order": null,
+          "resolution": "15m",
+          "startTime": "2020-09-21T15:00:00Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-23T15:10:40.318698555Z",
+      "_sysTime": "2020-09-23T15:10:40.322603185Z",
+      "_rowId": "c5uuexhw2gjf-470dec942000083-27",
+      "data": {
+        "created": "2020-09-23T15:10:40.319529055Z",
+        "dataset": "arnesynth",
+        "id": "i7WbfWbEdXAj6NC3Dp",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-09-23T15:15:00Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 1000,
+          "order": null,
+          "resolution": "15m",
+          "startTime": "2020-09-21T15:00:00Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-22T19:06:23.556368945Z",
+      "_sysTime": "2020-09-22T19:06:23.560642968Z",
+      "_rowId": "c5u4sv75e3ht-470df235a000281-e",
+      "data": {
+        "created": "2020-09-22T19:06:23.556153522Z",
+        "dataset": "arnesynth",
+        "id": "FeYEx7JUNKzAZhPtal",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "sum",
+              "field": "_time",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-22T19:04:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 0,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-22T18:34:30Z",
+          "virtualFields": null
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-22T19:04:40.909170604Z",
+      "_sysTime": "2020-09-22T19:04:40.913108432Z",
+      "_rowId": "c5u4rk1jwecs-470dec942000083-22",
+      "data": {
+        "created": "2020-09-22T19:04:40.909838467Z",
+        "dataset": "arnesynth",
+        "id": "mRVdG2auD3K58GW8Vt",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "sum",
+              "field": "_time",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-22T19:04:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 0,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-22T18:34:30Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-22T14:34:38.094374488Z",
+      "_sysTime": "2020-09-22T14:34:38.098249011Z",
+      "_rowId": "c5tz0skmbbrs-470df235a000281-7",
+      "data": {
+        "created": "2020-09-22T14:34:38.093733004Z",
+        "dataset": "arnesynth",
+        "id": "euLT1bKjZQHJJo8Ra4",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "count",
+              "field": "",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-22T14:33:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": [
+            "status"
+          ],
+          "limit": 20,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-22T14:03:30Z",
+          "virtualFields": null
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-22T14:33:53.979191249Z",
+      "_sysTime": "2020-09-22T14:33:53.983223681Z",
+      "_rowId": "c5tz08b19uj5-470dec942000083-1b",
+      "data": {
+        "created": "2020-09-22T14:33:53.979910589Z",
+        "dataset": "arnesynth",
+        "id": "0EzjQM2t2t7dX6fjTl",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "distinct",
+              "field": "status",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-22T14:34:00Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": [
+            "method"
+          ],
+          "limit": 20,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-22T14:03:45Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-22T14:33:45.622164661Z",
+      "_sysTime": "2020-09-22T14:33:45.626495796Z",
+      "_rowId": "c5tz04gtprjp-470dec942000083-1a",
+      "data": {
+        "created": "2020-09-22T14:33:45.622850689Z",
+        "dataset": "arnesynth",
+        "id": "njwNoTvLvLSiF0tPNO",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "distinct",
+              "field": "status",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-22T14:33:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 0,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-22T14:03:30Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-22T14:33:42.815465066Z",
+      "_sysTime": "2020-09-22T14:33:42.825493745Z",
+      "_rowId": "c5tz036eoga2-470dec942000083-19",
+      "data": {
+        "created": "2020-09-22T14:33:42.816105689Z",
+        "dataset": "arnesynth",
+        "id": "fLSNdTqpyxyPKDbL46",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "distinct",
+              "field": "status",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-22T14:33:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 0,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-22T14:03:30Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-22T14:13:04.912072289Z",
+      "_sysTime": "2020-09-22T14:13:04.916257822Z",
+      "_rowId": "c5tykahqylb5-470dec942000083-18",
+      "data": {
+        "created": "2020-09-22T14:13:04.912574377Z",
+        "dataset": "arnesynth",
+        "id": "LJIAh3agSHOyQWU9dX",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "distinct",
+              "field": "status",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-22T14:13:15Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 0,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-22T13:43:00Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-22T14:12:46.859939216Z",
+      "_sysTime": "2020-09-22T14:12:46.863742446Z",
+      "_rowId": "c5tyk2776qa8-470dec942000083-17",
+      "data": {
+        "created": "2020-09-22T14:12:46.860503014Z",
+        "dataset": "arnesynth",
+        "id": "UfbMhcbxiWxxaxJdxL",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "field": "status",
+              "argument": null,
+              "op": "distinct"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-22T14:12:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 0,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-22T13:42:45Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-22T14:12:40.446033771Z",
+      "_sysTime": "2020-09-22T14:12:40.4496487Z",
+      "_rowId": "c5tyjz94ih63-470dec942000083-16",
+      "data": {
+        "created": "2020-09-22T14:12:40.446445521Z",
+        "dataset": "arnesynth",
+        "id": "FOfuVmF7vdSkpdvhQf",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "argument": null,
+              "op": "distinct",
+              "field": "status"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-22T14:12:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 0,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-22T13:42:30Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-22T14:08:53.953233182Z",
+      "_sysTime": "2020-09-22T14:08:53.956676509Z",
+      "_rowId": "c5tyh37cjpr2-470dec942000083-15",
+      "data": {
+        "created": "2020-09-22T14:08:53.953842263Z",
+        "dataset": "arnesynth",
+        "id": "jp6PT6lzD0LIXQhUiv",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "argument": null,
+              "op": "distinct",
+              "field": "status"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-22T14:09:00Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 0,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-22T13:38:45Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-22T14:08:49.282421013Z",
+      "_sysTime": "2020-09-22T14:08:49.286119742Z",
+      "_rowId": "c5tyh123o00l-470dec942000083-14",
+      "data": {
+        "created": "2020-09-22T14:08:49.283071873Z",
+        "dataset": "arnesynth",
+        "id": "WymAFNDvIlONTuojg3",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "distinct",
+              "field": "status",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-22T14:09:00Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 0,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-22T13:38:45Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-22T14:01:10.244172374Z",
+      "_sysTime": "2020-09-22T14:01:10.248547208Z",
+      "_rowId": "c5tyb66g58ie-470dec942000083-13",
+      "data": {
+        "created": "2020-09-22T14:01:10.244810092Z",
+        "dataset": "arnesynth",
+        "id": "klGCgR9FxIwnegdSNq",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "distinct",
+              "field": "status",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-22T14:01:15Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 0,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-22T13:31:00Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-22T13:59:07.285242674Z",
+      "_sysTime": "2020-09-22T13:59:07.289056805Z",
+      "_rowId": "c5ty9loxkn5e-470dec942000083-12",
+      "data": {
+        "created": "2020-09-22T13:59:07.285752864Z",
+        "dataset": "arnesynth",
+        "id": "c7Nv2BXHREzBYydCdb",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "field": "status",
+              "argument": null,
+              "op": "distinct"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-22T13:59:15Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 0,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-22T13:29:00Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-21T22:08:28.555122605Z",
+      "_sysTime": "2020-09-21T22:08:28.563133158Z",
+      "_rowId": "c5te1qgmctrh-470dec942000083-11",
+      "data": {
+        "created": "2020-09-21T22:08:28.555758047Z",
+        "dataset": "arnesynth",
+        "id": "aQLSXmXqjZuMcCsIg8",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "distinct",
+              "field": "method",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-21T21:33:45Z",
+          "filter": {
+            "children": null,
+            "field": "_sysTime",
+            "op": "exists"
+          },
+          "groupBy": null,
+          "limit": 0,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-21T21:03:30Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-21T22:07:57.66060657Z",
+      "_sysTime": "2020-09-21T22:07:57.664111593Z",
+      "_rowId": "c5te1c9ok4mi-470dec942000083-10",
+      "data": {
+        "created": "2020-09-21T22:07:57.66138293Z",
+        "dataset": "arnesynth",
+        "id": "Sdwf57KhRnd3FxJP7d",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "argument": null,
+              "op": "distinct",
+              "field": "method"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-21T21:33:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": null,
+          "limit": 0,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-21T21:03:30Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-21T22:07:45.947925233Z",
+      "_sysTime": "2020-09-21T22:07:45.951462957Z",
+      "_rowId": "c5te16vz4pv5-470dec942000083-f",
+      "data": {
+        "created": "2020-09-21T22:07:45.948459108Z",
+        "dataset": "arnesynth",
+        "id": "wKZYFG1D4tJY2nM0np",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-09-21T21:33:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": [
+            "method"
+          ],
+          "limit": 20,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-21T21:03:30Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-21T21:56:22.092679938Z",
+      "_sysTime": "2020-09-21T21:56:22.106362829Z",
+      "_rowId": "c5tdsgq9dhj6-470dec942000083-e",
+      "data": {
+        "created": "2020-09-21T21:56:22.093222626Z",
+        "dataset": "arnesynth",
+        "id": "ZUQKrnHzFfPBVzHNjF",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "field": "",
+              "argument": null,
+              "op": "count"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-21T21:33:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": [
+            "method"
+          ],
+          "limit": 20,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-21T21:03:30Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-21T21:33:44.49281218Z",
+      "_sysTime": "2020-09-21T21:33:44.500698332Z",
+      "_rowId": "c5tdb521grdg-470dec942000083-d",
+      "data": {
+        "created": "2020-09-21T21:33:44.493413198Z",
+        "dataset": "arnesynth",
+        "id": "aHCYHcpf0ldk0ioBFq",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "field": "",
+              "argument": null,
+              "op": "count"
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-21T21:33:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": [
+            "method"
+          ],
+          "limit": 20,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-21T21:03:30Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-21T21:33:38.398234882Z",
+      "_sysTime": "2020-09-21T21:33:38.40242001Z",
+      "_rowId": "c5tdb298wtfm-470dec942000083-c",
+      "data": {
+        "created": "2020-09-21T21:33:38.398688863Z",
+        "dataset": "arnesynth",
+        "id": "8DDyeEBlfBlSDEhsFb",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-09-21T21:33:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": ""
+          },
+          "groupBy": [
+            "method"
+          ],
+          "limit": 20,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-21T21:03:30Z"
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-21T21:33:05.274939307Z",
+      "_sysTime": "2020-09-21T21:33:05.278729173Z",
+      "_rowId": "c5tdan1g5mzv-470dec92f00017e-1c",
+      "data": {
+        "created": "2020-09-21T21:33:05.274474011Z",
+        "dataset": "arnesynth",
+        "id": "iV1ub3RxMyl5iY222u",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-09-21T21:33:15Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": "",
+            "value": null
+          },
+          "groupBy": [
+            "method"
+          ],
+          "limit": 20,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-21T21:03:00Z",
+          "virtualFields": null
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-21T21:25:44.407952076Z",
+      "_sysTime": "2020-09-21T21:25:44.415733206Z",
+      "_rowId": "c5td50ibc2j0-470dec92f00017e-1b",
+      "data": {
+        "created": "2020-09-21T21:25:44.407410381Z",
+        "dataset": "arnesynth",
+        "id": "vElSFHJqToqksC8PWd",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [
+            {
+              "op": "count",
+              "field": "",
+              "argument": null
+            }
+          ],
+          "cursor": "",
+          "endTime": "2020-09-21T21:25:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": "",
+            "value": null
+          },
+          "groupBy": [
+            "method"
+          ],
+          "limit": 20,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-21T20:55:30Z",
+          "virtualFields": null
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    },
+    {
+      "_time": "2020-09-21T21:24:38.098377536Z",
+      "_sysTime": "2020-09-21T21:24:38.107519353Z",
+      "_rowId": "c5td461obrcw-470dec92f00017e-1a",
+      "data": {
+        "created": "2020-09-21T21:24:38.097788941Z",
+        "dataset": "arnesynth",
+        "id": "5Yjf2Y9Y2VToaaVVzm",
+        "kind": "analytics",
+        "name": "",
+        "query": {
+          "aggregations": [],
+          "cursor": "",
+          "endTime": "2020-09-21T21:24:45Z",
+          "filter": {
+            "children": null,
+            "field": "",
+            "op": "",
+            "value": null
+          },
+          "groupBy": [
+            "method"
+          ],
+          "limit": 20,
+          "order": null,
+          "resolution": "15s",
+          "startTime": "2020-09-21T20:54:30Z",
+          "virtualFields": null
+        },
+        "who": "9b01bf58-a081-4553-b958-ee1541663939"
+      }
+    }
+  ],
+  "buckets": {
+    "series": [],
+    "totals": []
+  }
+}

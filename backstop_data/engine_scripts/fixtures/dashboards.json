@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Empty Dashboard",
+    "owner": "9b01bf58-a081-4553-b958-ee1541663939",
+    "charts": [],
+    "layout": [],
+    "refreshTime": 15,
+    "schemaVersion": 2,
+    "timeWindowStart": "qr-now-30m",
+    "timeWindowEnd": "qr-now",
+    "id": "QKmtYuGjLdqLdwkShf",
+    "version": "1594306830226981709"
+  },
+  {
+    "name": "Company Dashboard",
+    "owner": "9b01bf58-a081-4553-b958-ee1541663939",
+    "description": "For the people",
+    "charts": [
+      {
+        "id": "e0acca26-59a8-4b05-811d-d9f3ab9fd2a4",
+        "name": "New Chart",
+        "type": "TimeSeries",
+        "datasetId": "synth",
+        "query": {
+          "aggregations": [
+            {
+              "op": "count",
+              "field": ""
+            }
+          ],
+          "limit": 20,
+          "groupBy": [
+            "method"
+          ]
+        },
+        "modified": 1599073161259
+      }
+    ],
+    "layout": [
+      {
+        "w": 9,
+        "h": 8,
+        "x": 0,
+        "y": 0,
+        "i": "e0acca26-59a8-4b05-811d-d9f3ab9fd2a4",
+        "minW": 4,
+        "minH": 4,
+        "moved": false,
+        "static": false
+      }
+    ],
+    "refreshTime": 15,
+    "schemaVersion": 2,
+    "timeWindowStart": "qr-now-30m",
+    "timeWindowEnd": "qr-now",
+    "id": "nGvSr9skxXm1Z2wQn3",
+    "version": "1599073173949240971"
+  }
+]

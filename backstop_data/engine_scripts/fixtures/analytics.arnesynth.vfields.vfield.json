@@ -1,0 +1,7 @@
+{
+  "dataset": "arnesynth",
+  "name": "geo_city",
+  "description": "Alias of geo city",
+  "expression": "geo.city",
+  "id": "geo_city"
+}

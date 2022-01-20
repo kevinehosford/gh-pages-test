@@ -1,0 +1,72 @@
+[
+  {
+    "kind": "analytics",
+    "dataset": "metrics",
+    "name": "Issue 1538",
+    "who": "9b01bf58-a081-4553-b958-ee1541663939",
+    "query": {
+      "aggregations": [
+        {
+          "op": "count"
+        },
+        {
+          "op": "avg",
+          "field": "value"
+        }
+      ],
+      "startTime": "2020-07-13T16:23:44.063Z",
+      "endTime": "2020-07-20T16:23:44.063Z",
+      "limit": 20,
+      "groupBy": [
+        "name"
+      ],
+      "resolution": "auto"
+    },
+    "metadata": {
+      "quickRange": "7d"
+    },
+    "id": "cUvCGptaOpeLBltAOg",
+    "created": "2020-07-20T16:23:59.269184576Z"
+  },
+  {
+    "kind": "analytics",
+    "dataset": "synth",
+    "name": "Test",
+    "who": "9b01bf58-a081-4553-b958-ee1541663939",
+    "query": {
+      "aggregations": [
+        {
+          "op": "count"
+        }
+      ],
+      "startTime": "2020-08-11T13:08:00.000Z",
+      "endTime": "2020-08-20T13:08:00.000Z",
+      "limit": 20,
+      "groupBy": [
+        "method"
+      ],
+      "resolution": "auto"
+    },
+    "metadata": {},
+    "id": "5WKJqukKVpUrQjkh0T",
+    "created": "2020-08-20T13:09:36.818401758Z"
+  },
+  {
+    "kind": "analytics",
+    "dataset": "synth",
+    "name": "3 Hours",
+    "who": "9b01bf58-a081-4553-b958-ee1541663939",
+    "query": {
+      "aggregations": [],
+      "startTime": "2020-08-26T12:33:29.170Z",
+      "endTime": "2020-08-26T15:33:29.170Z",
+      "limit": 1000,
+      "resolution": "auto"
+    },
+    "metadata": {
+      "quickRange": "3h"
+    },
+    "id": "OD6g5WmMHsntB3toNr",
+    "created": "2020-08-26T15:33:45.772163591Z"
+  }
+]

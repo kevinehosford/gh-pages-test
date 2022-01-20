@@ -1,0 +1,16 @@
+{
+  "updateSpec": "",
+  "instance": {
+    "instanceId": "1HTNA3D9CJ5E5JVM",
+    "slug": "axiom-azure1-i4j",
+    "hostname": "axiomui-67d565c75c-czjg9",
+    "organization": "axiomdb-axiom-testing",
+    "tierName": "basic",
+    "expiry": "2020-09-02T14:01:21Z"
+  },
+  "storageRemote": {
+    "backend": "",
+    "name": "",
+    "properties": null
+  }
+}

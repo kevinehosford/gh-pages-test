@@ -1,0 +1,21 @@
+{
+  "created": "2021-09-16T16:48:22.290918695Z",
+  "dataset": "",
+  "id": "wJcvd0yL4vx-qzjdcm",
+  "kind": "apl",
+  "name": "",
+  "query": {
+    "apl": "['axisynth']\n| summarize count() by bin_auto(_time)",
+    "endTime": "2021-09-16T16:48:20.727Z",
+    "queryOptions": {
+      "displayNull": "auto",
+      "endColumn": "39",
+      "endLineNumber": "2",
+      "quickRange": "30m",
+      "startColumn": "0",
+      "startLineNumber": "1"
+    },
+    "startTime": "2021-09-16T16:18:20.699Z"
+  },
+  "who": "9b01bf58-a081-4553-b958-ee1541663939"
+}
