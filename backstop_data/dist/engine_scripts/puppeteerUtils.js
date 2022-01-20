@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.typingOptions = exports.url = exports.clickWhenVisible = exports.waitForVisible = exports.waitForHidden = exports.sel = exports.delay = exports.backspace = void 0;
+exports.typingOptions = exports.url = exports.clickWhenVisible = exports.waitForVisible = exports.waitForHidden = exports.sel = exports.delay = exports.backspace = exports.BASE_APP_URL = void 0;
+exports.BASE_APP_URL = `http://${process.env.HOST_DOMAIN}:8083`;
 const backspace = async (page, times, focusSelector) => {
     if (focusSelector) {
         await page.focus(focusSelector);
@@ -41,7 +42,7 @@ const clickWhenVisible = async (page, selector, timeout, clickOptions) => {
 };
 exports.clickWhenVisible = clickWhenVisible;
 const url = (relativePath = '') => {
-    return `http://${process.env.HOST_DOMAIN}:8083${relativePath}`;
+    return `${exports.BASE_APP_URL}${relativePath}`;
 };
 exports.url = url;
 exports.typingOptions = {

@@ -3,17 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.baseConfig = exports.viewports = exports.includesScenario = exports.baseScenario = void 0;
 const minimist = require('minimist');
 // Process the args, e.g. npm run test -- --include=<scenario label> --include=<other scenario label> --debugWindow=true
-const { debugWindow, include, viewport, CI } = minimist(process.argv.slice(2));
+const { debugWindow, include, viewport } = minimist(process.argv.slice(2));
 if (!process.env.HOST_DOMAIN) {
-    process.env.HOST_DOMAIN = CI ? 'localhost' : 'host.docker.internal';
-    console.warn(`'HOST_DOMAIN' is not set. Using ${process.env.HOST_DOMAIN}`);
+    throw new Error(`'HOST_DOMAIN' is not set`);
 }
 const useDebugWindow = debugWindow === 'true';
-if (useDebugWindow) {
-    // If debugWindow is true then we're not using Docker, so reset HOST_DOMAIN to localhost.
-    process.env.HOST_DOMAIN = 'localhost';
-    console.log(`Using debugWindow. Resetting 'HOST_DOMAIN' to ${process.env.HOST_DOMAIN}.`);
-}
 exports.baseScenario = {
     referenceUrl: '',
     readyEvent: '',
@@ -56,7 +50,7 @@ exports.viewports = [
 ];
 exports.baseConfig = {
     // Add the ` --net="host"` param for Linux.
-    dockerCommandTemplate: 'docker run -e AXIOM_SID="$AXIOM_SID" --rm -i --net="host" --mount type=bind,source="{cwd}",target=/src dockerman33/backstopjs:5.4.4 {backstopCommand} {args}',
+    dockerCommandTemplate: 'docker run -e AXIOM_SID="$AXIOM_SID" --rm -it --net="host" --mount type=bind,source="{cwd}",target=/src dockerman33/backstopjs:5.4.4 {backstopCommand} {args}',
     viewports: exports.viewports,
     paths: {
         bitmaps_reference: 'backstop_data/bitmaps_reference',
@@ -65,7 +59,7 @@ exports.baseConfig = {
         html_report: 'backstop_data/html_report',
         ci_report: 'backstop_data/ci_report',
     },
-    report: CI ? ['CI'] : ['browser'],
+    report: ['browser'],
     engine: 'puppeteer',
     engineOptions: {
         args: ['--no-sandbox'],

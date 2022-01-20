@@ -1,5 +1,7 @@
 import { ClickOptions, Page } from 'puppeteer';
 
+export const BASE_APP_URL = `http://${process.env.HOST_DOMAIN}:8083`;
+
 export const backspace = async (page: Page, times: number, focusSelector?: string): Promise<void> => {
   if (focusSelector) {
     await page.focus(focusSelector);
@@ -60,7 +62,7 @@ export const clickWhenVisible = async (
 };
 
 export const url = (relativePath: string = ''): string => {
-  return `http://${process.env.HOST_DOMAIN}:8083${relativePath}`;
+  return `${BASE_APP_URL}${relativePath}`;
 };
 
 export const typingOptions = {

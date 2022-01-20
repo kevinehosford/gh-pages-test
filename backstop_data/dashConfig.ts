@@ -3,6 +3,15 @@ require('dotenv').config();
 const minimist = require('minimist');
 
 // Process the args, e.g. npm run test -- --include=<scenario label> --include=<other scenario label> --debugWindow=true
+const { debugWindow } = minimist(process.argv.slice(2));
+
+const useDebugWindow = debugWindow === 'true';
+
+// If debugWindow is true then we're not using Docker, so reset HOST_DOMAIN to localhost.
+if (useDebugWindow) {
+  process.env.HOST_DOMAIN = 'localhost';
+}
+
 import { Scenario } from 'backstopjs';
 import { createFixture, FixtureRoute } from 'puppeteer-request-intercepter';
 
@@ -11,7 +20,7 @@ import { clickWhenVisible, delay, sel, url, waitForVisible } from './engine_scri
 import { baseConfig, baseScenario, includesScenario } from './sharedConfig';
 
 if (!process.env.AXIOM_SID) {
-  console.warn(`'AXIOM_SID' is not set.`);
+  throw new Error(`'AXIOM_SID' is not set`);
 }
 
 const globalFixtures: FixtureRoute[] = [
@@ -99,14 +108,13 @@ const monacoEditorCodeReadySelectors = ['.monaco-editor .view-line .QueryOperato
 
 const includedScenarios = (
   [
-    // TODO: to test the login page we should add a call to log out (or something) that will clear any E2E auth hacking
-    // {
-    //   ...baseScenario,
-    //   label: 'login',
-    //   url: url('/'),
-    //   readySelectors: [sel('local-login')],
-    //   onBeforeScript: 'onBefore.js',
-    // },
+    {
+      ...baseScenario,
+      label: 'login',
+      url: url('/'),
+      readySelectors: [sel('local-login')],
+      onBeforeScript: 'onBefore.js',
+    },
     // Home is just analytics now.
     // {
     //   ...baseScenario,
@@ -127,289 +135,289 @@ const includedScenarios = (
         createFixture('POST', '/api/v1/datasets/synth', 'stream.synth.json'),
       ],
     },
-    // {
-    //   ...baseScenario,
-    //   label: 'analytics',
-    //   url: url('/axiom/datasets'),
-    //   readySelectors: [
-    //     `${sel('datasetsSummary')} > div:nth-child(2) a`,
-    //     `${sel('starredSummary')} > div:nth-child(2) a`,
-    //     `${sel('historySummary')} > div:nth-child(2) a`,
-    //     `${sel('statStorageUsed')} .e2e-value`,
-    //     `${sel('statDatasets')} .e2e-value`,
-    //     `${sel('statEvents')} .e2e-value`,
-    //   ],
-    //   hideSelectors: [`${sel('statLastEvent')} .e2e-value`],
-    //   fixtures: [
-    //     createFixture('GET', '/api/v1/datasets/_stats', 'analytics.stats.json'),
-    //     createFixture('GET', '/api/v1/starred', 'analytics.starred.json'),
-    //     createFixture('POST', '/api/v1/datasets/axiom-history/query', 'analytics.history.json'),
-    //     ...datasetFixtures,
-    //     ...globalFixtures,
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'analytics/synth',
-    //   url: url('/axiom/datasets/synth'),
-    //   readySelectors: analyticsDetailsReadySelectors,
-    //   hideSelectors: [`${sel('statLastEvent')} .e2e-value`],
-    //   fixtures: [
-    //     createFixture('GET', '/api/v1/datasets/_stats', 'analytics.synth.stats.json'),
-    //     createFixture('GET', '/api/v1/starred', 'analytics.synth.starred.json'),
-    //     createFixture('POST', '/api/v1/datasets/axiom-history/query', 'analytics.synth.history.json'),
-    //     createFixture('GET', '/api/v1/datasets/synth', 'analytics.synth.get.json'),
-    //     ...datasetFixtures,
-    //     ...globalFixtures,
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'analytics/synth/run',
-    //   url: url('/axiom/datasets/synth?qid=TQOjIEWUzEumXVEbgc'),
-    //   readySelectors: ['.uplot', `${sel('filterBar')} > .e2e-ready`],
-    //   fixtures: [
-    //     createFixture('GET', '/api/v1/datasets/synth/info', 'analytics.synth.run.get.json'),
-    //     createFixture('POST', '/api/v1/datasets/synth/query', 'analytics.synth.run.json'),
-    //     createFixture('GET', '/api/v1/datasets/_history/TQOjIEWUzEumXVEbgc', 'analytics.synth.run.history.json'),
-    //     ...datasetFixtures,
-    //     ...globalFixtures,
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'analytics/arnesynth/run/0',
-    //   url: url('/axiom/datasets/arnesynth?qid=qmJTVpDIt12D5xwTaX'),
-    //   readySelectors: ['.uplot', `${sel('filterBar')} > .e2e-ready`],
-    //   fixtures: [
-    //     createFixture('GET', '/api/v1/datasets/arnesynth', 'analytics.arnesynth.run.get.json'),
-    //     createFixture('POST', '/api/v1/datasets/arnesynth', 'analytics.arnesynth.run.json'),
-    //     createFixture('GET', '/api/v1/datasets/_history/qmJTVpDIt12D5xwTaX', 'analytics.arnesynth.run.history-0.json'),
-    //     ...datasetFixtures,
-    //     ...globalFixtures,
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'analytics/arnesynth/run/1',
-    //   url: url('/axiom/datasets/arnesynth?qid=bzOrrDHtO3cUhIlCv5'),
-    //   readySelectors: ['.uplot', `${sel('filterBar')} > .e2e-ready`],
-    //   fixtures: [
-    //     createFixture('GET', '/api/v1/datasets/arnesynth', 'analytics.arnesynth.run.get.json'),
-    //     createFixture('POST', '/api/v1/datasets/arnesynth', 'analytics.arnesynth.run.json'),
-    //     createFixture('GET', '/api/v1/datasets/_history/bzOrrDHtO3cUhIlCv5', 'analytics.arnesynth.run.history-1.json'),
-    //     ...datasetFixtures,
-    //     ...globalFixtures,
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'analytics/arnesynth/run/2',
-    //   url: url('/axiom/datasets/arnesynth?qid=ZtwVd1ScsPcX50twmz'),
-    //   readySelectors: ['.uplot', `${sel('filterBar')} > .e2e-ready`],
-    //   hoverSelectors: ['.u-under'],
-    //   fixtures: [
-    //     createFixture('GET', '/api/v1/datasets/arnesynth', 'analytics.arnesynth.run.get.json'),
-    //     createFixture('POST', '/api/v1/datasets/arnesynth', 'analytics.arnesynth.run.2.post.json'),
-    //     createFixture(
-    //       'GET',
-    //       '/api/v1/datasets/_history/ZtwVd1ScsPcX50twmz',
-    //       'analytics.arnesynth.run.2.history.get.json'
-    //     ),
-    //     ...datasetFixtures,
-    //     ...globalFixtures,
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'analytics/arnesynth/vfields',
-    //   url: url('/axiom/datasets/arnesynth?view=vfields'),
-    //   readySelectors: [...analyticsDetailsReadySelectors, `${sel('virtualFieldsSidebar')}`],
-    //   hideSelectors: [`${sel('statLastEvent')} .e2e-value`],
-    //   fixtures: [...arnesynthFixtures, ...datasetFixtures, ...globalFixtures],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'analytics/arnesynth/vfields/edit',
-    //   url: url('/axiom/datasets/arnesynth?vfield=geo_city'),
-    //   readySelectors: [
-    //     ...analyticsDetailsReadySelectors,
-    //     ...monacoEditorSelectedReadySelectors,
-    //     ...monacoEditorCodeReadySelectors,
-    //     `${sel('virtualFieldEditModal')}`,
-    //     `${sel('virtualFieldPreviewTable')}`,
-    //     `${sel('refreshAction')}.e2e-ready`,
-    //   ],
-    //   hideSelectors: [`${sel('statLastEvent')} .e2e-value`],
-    //   clickSelectors: [`${sel('refreshAction')}`],
-    //   postInteractionWait: 2000,
-    //   fixtures: [
-    //     createFixture('GET', '/api/v1/vfields/geo_city', 'analytics.arnesynth.vfields.vfield.json'),
-    //     createFixture('POST', '/api/v1/datasets/arnesynth', 'analytics.arnesynth.vfields.edit.json'),
-    //     ...arnesynthFixtures,
-    //     ...datasetFixtures,
-    //     ...globalFixtures,
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'analytics/arnesynth/starred',
-    //   url: url('/axiom/datasets/arnesynth?view=starred'),
-    //   readySelectors: [...analyticsDetailsReadySelectors, `${sel('queriesSidebar')}`, `${sel('queries')}`],
-    //   fixtures: [...arnesynthFixtures, ...datasetFixtures, ...globalFixtures],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'analytics/arnesynth/history',
-    //   url: url('/axiom/datasets/arnesynth?view=history'),
-    //   readySelectors: [...analyticsDetailsReadySelectors, `${sel('queriesSidebar')}`, `${sel('queries')}`],
-    //   fixtures: [...arnesynthFixtures, ...datasetFixtures, ...globalFixtures],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'dashboards',
-    //   url: url('/axiom/dashboards'),
-    //   readySelectors: [`${sel('ownedSummary')} > div:nth-child(2) a`],
-    //   fixtures: [
-    //     createFixture('GET', '/api/v1/dashboards', 'dashboards.json'),
-    //     createFixture('GET', '/api/v1/integrations/dashboards', 'dashboards.integrations.json'),
-    //     ...globalFixtures,
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'dashboards/QKmtYuGjLdqLdwkShf/empty',
-    //   url: url('/axiom/dashboards/QKmtYuGjLdqLdwkShf'),
-    //   readySelector: sel('addChart'),
-    //   fixtures: [...globalFixtures, ...dashboardFixtures],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'dashboards/details',
-    //   url: url('/axiom/dashboards/nGvSr9skxXm1Z2wQn3'),
-    //   readySelector: '.uplot',
-    //   fixtures: [...globalFixtures, ...dashboardFixtures],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'dashboards/details/edit',
-    //   url: url('/axiom/dashboards/nGvSr9skxXm1Z2wQn3/edit/e0acca26-59a8-4b05-811d-d9f3ab9fd2a4'),
-    //   hideSelectors: [`${sel('queryResultsTiming')}`],
-    //   readySelectors: ['.sidebar-entered .uplot'],
-    //   fixtures: [...globalFixtures, ...dashboardFixtures],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'explorer',
-    //   url: url('/axiom/explorer'),
-    //   readySelectors: [
-    //     ...monacoEditorSelectedReadySelectors,
-    //     '.monaco-editor .view-line .Comment',
-    //     `${sel('datasetsSummary')} > div:nth-child(2) a`,
-    //     `${sel('historySummary')} > div:nth-child(2) a`,
-    //     `${sel('runQuery')}:enabled`,
-    //   ],
-    //   fixtures: [...explorerFixtures, ...globalFixtures],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'explorer/run/0',
-    //   // cSpell:disable-next-line
-    //   url: url('/axiom/explorer?qid=wJcvd0yL4vx-qzjdcm'),
-    //   readySelectors: [...monacoEditorCodeReadySelectors, `${sel('runQuery')}:enabled`, '.uplot', '.monaco-editor'],
-    //   hideSelectors: [sel('queryResultsTiming'), sel('lastRun')],
-    //   fixtures: [
-    //     createFixture('GET', '/api/v1/datasets/_history', 'explorer.datasets._history.run.0.json'),
-    //     createFixture('POST', '/api/v1/datasets/_apl', 'explorer.datasets.apl.run.0.json'),
-    //     ...explorerFixtures,
-    //     ...globalFixtures,
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'explorer/relative',
-    //   description: 'Test restoring a query and clicking the re-run with relative times button',
-    //   // cSpell:disable-next-line
-    //   url: url('/axiom/explorer?qid=DLCvAjJCrwG-r2s8uf'),
-    //   readySelectors: [
-    //     ...monacoEditorCodeReadySelectors,
-    //     `${sel('runQuery')}:enabled`,
-    //     '.uplot',
-    //     '.monaco-editor',
-    //     `${sel('reRunRelative')}`,
-    //   ],
-    //   hideSelectors: [sel('queryResultsTiming'), sel('lastRun')],
-    //   clickSelector: `${sel('reRunRelative')}`,
-    //   onReady: async (page) => {
-    //     const readySelectors = [
-    //       ...monacoEditorCodeReadySelectors,
-    //       `${sel('runQuery')}:enabled`,
-    //       '.uplot',
-    //       '.monaco-editor',
-    //     ];
+    {
+      ...baseScenario,
+      label: 'analytics',
+      url: url('/axiom/datasets'),
+      readySelectors: [
+        `${sel('datasetsSummary')} > div:nth-child(2) a`,
+        `${sel('starredSummary')} > div:nth-child(2) a`,
+        `${sel('historySummary')} > div:nth-child(2) a`,
+        `${sel('statStorageUsed')} .e2e-value`,
+        `${sel('statDatasets')} .e2e-value`,
+        `${sel('statEvents')} .e2e-value`,
+      ],
+      hideSelectors: [`${sel('statLastEvent')} .e2e-value`],
+      fixtures: [
+        createFixture('GET', '/api/v1/datasets/_stats', 'analytics.stats.json'),
+        createFixture('GET', '/api/v1/starred', 'analytics.starred.json'),
+        createFixture('POST', '/api/v1/datasets/axiom-history/query', 'analytics.history.json'),
+        ...datasetFixtures,
+        ...globalFixtures,
+      ],
+    },
+    {
+      ...baseScenario,
+      label: 'analytics/synth',
+      url: url('/axiom/datasets/synth'),
+      readySelectors: analyticsDetailsReadySelectors,
+      hideSelectors: [`${sel('statLastEvent')} .e2e-value`],
+      fixtures: [
+        createFixture('GET', '/api/v1/datasets/_stats', 'analytics.synth.stats.json'),
+        createFixture('GET', '/api/v1/starred', 'analytics.synth.starred.json'),
+        createFixture('POST', '/api/v1/datasets/axiom-history/query', 'analytics.synth.history.json'),
+        createFixture('GET', '/api/v1/datasets/synth', 'analytics.synth.get.json'),
+        ...datasetFixtures,
+        ...globalFixtures,
+      ],
+    },
+    {
+      ...baseScenario,
+      label: 'analytics/synth/run',
+      url: url('/axiom/datasets/synth?qid=TQOjIEWUzEumXVEbgc'),
+      readySelectors: ['.uplot', `${sel('filterBar')} > .e2e-ready`],
+      fixtures: [
+        createFixture('GET', '/api/v1/datasets/synth/info', 'analytics.synth.run.get.json'),
+        createFixture('POST', '/api/v1/datasets/synth/query', 'analytics.synth.run.json'),
+        createFixture('GET', '/api/v1/datasets/_history/TQOjIEWUzEumXVEbgc', 'analytics.synth.run.history.json'),
+        ...datasetFixtures,
+        ...globalFixtures,
+      ],
+    },
+    {
+      ...baseScenario,
+      label: 'analytics/arnesynth/run/0',
+      url: url('/axiom/datasets/arnesynth?qid=qmJTVpDIt12D5xwTaX'),
+      readySelectors: ['.uplot', `${sel('filterBar')} > .e2e-ready`],
+      fixtures: [
+        createFixture('GET', '/api/v1/datasets/arnesynth', 'analytics.arnesynth.run.get.json'),
+        createFixture('POST', '/api/v1/datasets/arnesynth', 'analytics.arnesynth.run.json'),
+        createFixture('GET', '/api/v1/datasets/_history/qmJTVpDIt12D5xwTaX', 'analytics.arnesynth.run.history-0.json'),
+        ...datasetFixtures,
+        ...globalFixtures,
+      ],
+    },
+    {
+      ...baseScenario,
+      label: 'analytics/arnesynth/run/1',
+      url: url('/axiom/datasets/arnesynth?qid=bzOrrDHtO3cUhIlCv5'),
+      readySelectors: ['.uplot', `${sel('filterBar')} > .e2e-ready`],
+      fixtures: [
+        createFixture('GET', '/api/v1/datasets/arnesynth', 'analytics.arnesynth.run.get.json'),
+        createFixture('POST', '/api/v1/datasets/arnesynth', 'analytics.arnesynth.run.json'),
+        createFixture('GET', '/api/v1/datasets/_history/bzOrrDHtO3cUhIlCv5', 'analytics.arnesynth.run.history-1.json'),
+        ...datasetFixtures,
+        ...globalFixtures,
+      ],
+    },
+    {
+      ...baseScenario,
+      label: 'analytics/arnesynth/run/2',
+      url: url('/axiom/datasets/arnesynth?qid=ZtwVd1ScsPcX50twmz'),
+      readySelectors: ['.uplot', `${sel('filterBar')} > .e2e-ready`],
+      hoverSelectors: ['.u-under'],
+      fixtures: [
+        createFixture('GET', '/api/v1/datasets/arnesynth', 'analytics.arnesynth.run.get.json'),
+        createFixture('POST', '/api/v1/datasets/arnesynth', 'analytics.arnesynth.run.2.post.json'),
+        createFixture(
+          'GET',
+          '/api/v1/datasets/_history/ZtwVd1ScsPcX50twmz',
+          'analytics.arnesynth.run.2.history.get.json'
+        ),
+        ...datasetFixtures,
+        ...globalFixtures,
+      ],
+    },
+    {
+      ...baseScenario,
+      label: 'analytics/arnesynth/vfields',
+      url: url('/axiom/datasets/arnesynth?view=vfields'),
+      readySelectors: [...analyticsDetailsReadySelectors, `${sel('virtualFieldsSidebar')}`],
+      hideSelectors: [`${sel('statLastEvent')} .e2e-value`],
+      fixtures: [...arnesynthFixtures, ...datasetFixtures, ...globalFixtures],
+    },
+    {
+      ...baseScenario,
+      label: 'analytics/arnesynth/vfields/edit',
+      url: url('/axiom/datasets/arnesynth?vfield=geo_city'),
+      readySelectors: [
+        ...analyticsDetailsReadySelectors,
+        ...monacoEditorSelectedReadySelectors,
+        ...monacoEditorCodeReadySelectors,
+        `${sel('virtualFieldEditModal')}`,
+        `${sel('virtualFieldPreviewTable')}`,
+        `${sel('refreshAction')}.e2e-ready`,
+      ],
+      hideSelectors: [`${sel('statLastEvent')} .e2e-value`],
+      clickSelectors: [`${sel('refreshAction')}`],
+      postInteractionWait: 2000,
+      fixtures: [
+        createFixture('GET', '/api/v1/vfields/geo_city', 'analytics.arnesynth.vfields.vfield.json'),
+        createFixture('POST', '/api/v1/datasets/arnesynth', 'analytics.arnesynth.vfields.edit.json'),
+        ...arnesynthFixtures,
+        ...datasetFixtures,
+        ...globalFixtures,
+      ],
+    },
+    {
+      ...baseScenario,
+      label: 'analytics/arnesynth/starred',
+      url: url('/axiom/datasets/arnesynth?view=starred'),
+      readySelectors: [...analyticsDetailsReadySelectors, `${sel('queriesSidebar')}`, `${sel('queries')}`],
+      fixtures: [...arnesynthFixtures, ...datasetFixtures, ...globalFixtures],
+    },
+    {
+      ...baseScenario,
+      label: 'analytics/arnesynth/history',
+      url: url('/axiom/datasets/arnesynth?view=history'),
+      readySelectors: [...analyticsDetailsReadySelectors, `${sel('queriesSidebar')}`, `${sel('queries')}`],
+      fixtures: [...arnesynthFixtures, ...datasetFixtures, ...globalFixtures],
+    },
+    {
+      ...baseScenario,
+      label: 'dashboards',
+      url: url('/axiom/dashboards'),
+      readySelectors: [`${sel('ownedSummary')} > div:nth-child(2) a`],
+      fixtures: [
+        createFixture('GET', '/api/v1/dashboards', 'dashboards.json'),
+        createFixture('GET', '/api/v1/integrations/dashboards', 'dashboards.integrations.json'),
+        ...globalFixtures,
+      ],
+    },
+    {
+      ...baseScenario,
+      label: 'dashboards/QKmtYuGjLdqLdwkShf/empty',
+      url: url('/axiom/dashboards/QKmtYuGjLdqLdwkShf'),
+      readySelector: sel('addChart'),
+      fixtures: [...globalFixtures, ...dashboardFixtures],
+    },
+    {
+      ...baseScenario,
+      label: 'dashboards/details',
+      url: url('/axiom/dashboards/nGvSr9skxXm1Z2wQn3'),
+      readySelector: '.uplot',
+      fixtures: [...globalFixtures, ...dashboardFixtures],
+    },
+    {
+      ...baseScenario,
+      label: 'dashboards/details/edit',
+      url: url('/axiom/dashboards/nGvSr9skxXm1Z2wQn3/edit/e0acca26-59a8-4b05-811d-d9f3ab9fd2a4'),
+      hideSelectors: [`${sel('queryResultsTiming')}`],
+      readySelectors: ['.sidebar-entered .uplot'],
+      fixtures: [...globalFixtures, ...dashboardFixtures],
+    },
+    {
+      ...baseScenario,
+      label: 'explorer',
+      url: url('/axiom/explorer'),
+      readySelectors: [
+        ...monacoEditorSelectedReadySelectors,
+        '.monaco-editor .view-line .Comment',
+        `${sel('datasetsSummary')} > div:nth-child(2) a`,
+        `${sel('historySummary')} > div:nth-child(2) a`,
+        `${sel('runQuery')}:enabled`,
+      ],
+      fixtures: [...explorerFixtures, ...globalFixtures],
+    },
+    {
+      ...baseScenario,
+      label: 'explorer/run/0',
+      // cSpell:disable-next-line
+      url: url('/axiom/explorer?qid=wJcvd0yL4vx-qzjdcm'),
+      readySelectors: [...monacoEditorCodeReadySelectors, `${sel('runQuery')}:enabled`, '.uplot', '.monaco-editor'],
+      hideSelectors: [sel('queryResultsTiming'), sel('lastRun')],
+      fixtures: [
+        createFixture('GET', '/api/v1/datasets/_history', 'explorer.datasets._history.run.0.json'),
+        createFixture('POST', '/api/v1/datasets/_apl', 'explorer.datasets.apl.run.0.json'),
+        ...explorerFixtures,
+        ...globalFixtures,
+      ],
+    },
+    {
+      ...baseScenario,
+      label: 'explorer/relative',
+      description: 'Test restoring a query and clicking the re-run with relative times button',
+      // cSpell:disable-next-line
+      url: url('/axiom/explorer?qid=DLCvAjJCrwG-r2s8uf'),
+      readySelectors: [
+        ...monacoEditorCodeReadySelectors,
+        `${sel('runQuery')}:enabled`,
+        '.uplot',
+        '.monaco-editor',
+        `${sel('reRunRelative')}`,
+      ],
+      hideSelectors: [sel('queryResultsTiming'), sel('lastRun')],
+      clickSelector: `${sel('reRunRelative')}`,
+      onReady: async (page) => {
+        const readySelectors = [
+          ...monacoEditorCodeReadySelectors,
+          `${sel('runQuery')}:enabled`,
+          '.uplot',
+          '.monaco-editor',
+        ];
 
-    //     for (const readySelector of readySelectors) {
-    //       console.log('Waiting for...', readySelector);
-    //       await page.waitFor(readySelector);
-    //     }
-    //   },
-    //   fixtures: [
-    //     createFixture('GET', '/api/v1/datasets/_history', 'explorer.datasets._history.relative.json'),
-    //     createFixture('POST', '/api/v1/datasets/_apl', 'explorer.datasets._apl.relative.json'),
-    //     ...explorerFixtures,
-    //     ...globalFixtures,
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'explorer/fieldlist/datasets',
-    //   url: url('/axiom/explorer?fieldList=1'),
-    //   readySelectors: ['.monaco-editor .view-line .Comment', `${sel('runQuery')}:enabled`],
-    //   fixtures: [...explorerFixtures, ...globalFixtures],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'explorer/fieldlist/fields',
-    //   url: url('/axiom/explorer?fieldList=1&qid=DLCvAjJCrwG-r2s8uf'),
-    //   readySelectors: ['.monaco-editor .view-line .Function', `${sel('runQuery')}:enabled`],
-    //   hideSelectors: [sel('queryResultsTiming'), sel('lastRun')],
-    //   fixtures: [
-    //     createFixture('GET', '/api/v1/datasets/_history', 'explorer.datasets._history.relative.json'),
-    //     createFixture('POST', '/api/v1/datasets/_apl', 'explorer.datasets._apl.fields.relative.json'),
-    //     ...explorerFixtures,
-    //     ...globalFixtures,
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'stream',
-    //   url: url('/axiom/stream'),
-    //   readySelectors: [
-    //     `${sel('datasetsSummary')} > div:nth-child(2) a`,
-    //     `${sel('starredSummary')} > div:nth-child(2) a`,
-    //     `${sel('statStorageUsed')} .e2e-value`,
-    //     `${sel('statDatasets')} .e2e-value`,
-    //     `${sel('statEvents')} .e2e-value`,
-    //   ],
-    //   hideSelectors: [`${sel('statLastEvent')} .e2e-value`],
-    //   fixtures: [
-    //     createFixture('GET', '/api/v1/datasets/_stats', 'stream.stats.json'),
-    //     createFixture('GET', '/api/v1/starred', 'stream.starred.json'),
-    //     ...datasetFixtures,
-    //     ...globalFixtures,
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'stream/synth',
-    //   url: url('/axiom/stream/synth'),
-    //   readySelector: sel('logsStream'),
-    //   fixtures: [
-    //     ...globalFixtures,
-    //     ...datasetFixtures,
-    //     createFixture('POST', '/api/v1/datasets/synth', 'stream.synth.json'),
-    //   ],
-    // },
+        for (const readySelector of readySelectors) {
+          console.log('Waiting for...', readySelector);
+          await page.waitFor(readySelector);
+        }
+      },
+      fixtures: [
+        createFixture('GET', '/api/v1/datasets/_history', 'explorer.datasets._history.relative.json'),
+        createFixture('POST', '/api/v1/datasets/_apl', 'explorer.datasets._apl.relative.json'),
+        ...explorerFixtures,
+        ...globalFixtures,
+      ],
+    },
+    {
+      ...baseScenario,
+      label: 'explorer/fieldlist/datasets',
+      url: url('/axiom/explorer?fieldList=1'),
+      readySelectors: ['.monaco-editor .view-line .Comment', `${sel('runQuery')}:enabled`],
+      fixtures: [...explorerFixtures, ...globalFixtures],
+    },
+    {
+      ...baseScenario,
+      label: 'explorer/fieldlist/fields',
+      url: url('/axiom/explorer?fieldList=1&qid=DLCvAjJCrwG-r2s8uf'),
+      readySelectors: ['.monaco-editor .view-line .Function', `${sel('runQuery')}:enabled`],
+      hideSelectors: [sel('queryResultsTiming'), sel('lastRun')],
+      fixtures: [
+        createFixture('GET', '/api/v1/datasets/_history', 'explorer.datasets._history.relative.json'),
+        createFixture('POST', '/api/v1/datasets/_apl', 'explorer.datasets._apl.fields.relative.json'),
+        ...explorerFixtures,
+        ...globalFixtures,
+      ],
+    },
+    {
+      ...baseScenario,
+      label: 'stream',
+      url: url('/axiom/stream'),
+      readySelectors: [
+        `${sel('datasetsSummary')} > div:nth-child(2) a`,
+        `${sel('starredSummary')} > div:nth-child(2) a`,
+        `${sel('statStorageUsed')} .e2e-value`,
+        `${sel('statDatasets')} .e2e-value`,
+        `${sel('statEvents')} .e2e-value`,
+      ],
+      hideSelectors: [`${sel('statLastEvent')} .e2e-value`],
+      fixtures: [
+        createFixture('GET', '/api/v1/datasets/_stats', 'stream.stats.json'),
+        createFixture('GET', '/api/v1/starred', 'stream.starred.json'),
+        ...datasetFixtures,
+        ...globalFixtures,
+      ],
+    },
+    {
+      ...baseScenario,
+      label: 'stream/synth',
+      url: url('/axiom/stream/synth'),
+      readySelector: sel('logsStream'),
+      fixtures: [
+        ...globalFixtures,
+        ...datasetFixtures,
+        createFixture('POST', '/api/v1/datasets/synth', 'stream.synth.json'),
+      ],
+    },
     // {
     //   ...baseScenario,
     //   label: 'integrations',
@@ -439,72 +447,57 @@ const includedScenarios = (
     //     ...globalFixtures,
     //   ],
     // },
-    // {
-    //   ...baseScenario,
-    //   label: 'settings/auth',
-    //   url: url('/axiom/settings/auth'),
-    //   readySelectors: [...settingsReadySelector, `${sel('authSummary')} .e2e-enabled`],
-    //   fixtures: [
-    //     ...globalFixtures,
-    //     ...settingsFixtures,
-    //     createFixture('GET', '/api/v1/settings/oauth', 'settings.oauth.json'),
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'profile',
-    //   url: url('/axiom/settings/profile'),
-    //   readySelectors: [sel('profileSettings'), `${sel('personalTokensSummary')} > div:nth-child(2) button`],
-    //   fixtures: [
-    //     createFixture('GET', '/api/v1/datasets/_stats', 'analytics.stats.json'),
-    //     createFixture('GET', '/api/v1/starred', 'analytics.starred.json'),
-    //     createFixture('POST', '/api/v1/datasets/axiom-history/query', 'analytics.history.json'),
-    //     ...globalFixtures,
-    //     ...datasetFixtures,
-    //     createFixture('GET', '/api/v1/tokens/personal', 'tokens.personal.json'),
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'settings/datasets',
-    //   url: url('/axiom/settings/datasets'),
-    //   readySelectors: [
-    //     ...settingsReadySelector,
-    //     sel('addDatasetButton'),
-    //     `${sel('datasetsSummary')} > div:nth-child(2) a`,
-    //   ],
-    //   fixtures: [...globalFixtures, ...settingsFixtures, ...datasetFixtures],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'settings/tokens',
-    //   url: url('/axiom/settings/tokens'),
-    //   readySelectors: [
-    //     ...settingsReadySelector,
-    //     sel('addTokenButton'),
-    //     `${sel('tokensSummary')} > div:nth-child(2) button`,
-    //   ],
-    //   fixtures: [
-    //     ...globalFixtures,
-    //     ...settingsFixtures,
-    //     createFixture('GET', '/api/v1/tokens/ingest', 'tokens.ingest.json'),
-    //   ],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'settings/status',
-    //   url: url('/axiom/settings/status'),
-    //   readySelectors: [...settingsReadySelector, sel('statusSettingsLicense')],
-    //   // hideSelectors: [`${sel('statusSettingsLicense')} > div:nth-child(4) > div:nth-child(2)`],
-    //   fixtures: [...globalFixtures, ...settingsFixtures],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'settings/teams',
-    //   url: url('/axiom/settings/teams'),
-    //   readySelectors: [...settingsReadySelector, `${sel('teamsSummary')} > div:nth-child(2) a`],
-    //   fixtures: [...globalFixtures, ...settingsFixtures, createFixture('GET', '/api/v1/teams', 'settings.teams.json')],
-    // },
+    {
+      ...baseScenario,
+      label: 'settings/auth',
+      url: url('/axiom/settings/auth'),
+      readySelectors: [...settingsReadySelector, `${sel('authSummary')} .e2e-enabled`],
+      fixtures: [
+        ...globalFixtures,
+        ...settingsFixtures,
+        createFixture('GET', '/api/v1/settings/oauth', 'settings.oauth.json'),
+      ],
+    },
+    {
+      ...baseScenario,
+      label: 'profile',
+      url: url('/axiom/settings/profile'),
+      readySelectors: [sel('profileSettings'), `${sel('personalTokensSummary')} > div:nth-child(2) button`],
+      fixtures: [
+        createFixture('GET', '/api/v1/datasets/_stats', 'analytics.stats.json'),
+        createFixture('GET', '/api/v1/starred', 'analytics.starred.json'),
+        createFixture('POST', '/api/v1/datasets/axiom-history/query', 'analytics.history.json'),
+        ...globalFixtures,
+        ...datasetFixtures,
+        createFixture('GET', '/api/v1/tokens/personal', 'tokens.personal.json'),
+      ],
+    },
+    {
+      ...baseScenario,
+      label: 'settings/datasets',
+      url: url('/axiom/settings/datasets'),
+      readySelectors: [
+        ...settingsReadySelector,
+        sel('addDatasetButton'),
+        `${sel('datasetsSummary')} > div:nth-child(2) a`,
+      ],
+      fixtures: [...globalFixtures, ...settingsFixtures, ...datasetFixtures],
+    },
+    {
+      ...baseScenario,
+      label: 'settings/status',
+      url: url('/axiom/settings/status'),
+      readySelectors: [...settingsReadySelector, sel('statusSettingsLicense')],
+      // hideSelectors: [`${sel('statusSettingsLicense')} > div:nth-child(4) > div:nth-child(2)`],
+      fixtures: [...globalFixtures, ...settingsFixtures],
+    },
+    {
+      ...baseScenario,
+      label: 'settings/teams',
+      url: url('/axiom/settings/teams'),
+      readySelectors: [...settingsReadySelector, `${sel('teamsSummary')} > div:nth-child(2) a`],
+      fixtures: [...globalFixtures, ...settingsFixtures, createFixture('GET', '/api/v1/teams', 'settings.teams.json')],
+    },
     // Page was removed (for now):
     // {
     //   ...baseScenario,
@@ -525,38 +518,38 @@ const includedScenarios = (
       readySelectors: [...settingsReadySelector, `${sel('usersSummary')} > div:nth-child(2) img`],
       fixtures: [...globalFixtures, ...settingsFixtures],
     },
-    // {
-    //   ...baseScenario,
-    //   label: 'alerts',
-    //   url: url('/axiom/alerts'),
-    //   readySelectors: [...alertsReadySelectors],
-    //   fixtures: [...globalFixtures, ...alertsNotifiersFixtures],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'notifiers',
-    //   url: url('/axiom/alerts/notifiers'),
-    //   readySelectors: [...alertsReadySelectors, `${sel('notifiersSidebarList')} img[alt="Slack"]`],
-    //   fixtures: [...globalFixtures, ...alertsNotifiersFixtures],
-    // },
-    // {
-    //   ...baseScenario,
-    //   label: 'alerts/monitor',
-    //   // cSpell:disable-next-line
-    //   url: url('/axiom/alerts/monitor/0E8LjxaGmlqqrTOtiv'),
-    //   hideSelectors: [`${sel('queryResultsTiming')}`],
-    //   readySelectors: [...alertsReadySelectors, sel('monitorForm'), '.uplot', `${sel('queryForm')}.e2e-ready`],
-    //   fixtures: [
-    //     ...globalFixtures,
-    //     createFixture('GET', '/api/v1/datasets/k8s-logs/info', 'monitor.k8s-logs.json'),
-    //     createFixture('POST', '/api/v1/datasets/k8s-logs/query', 'monitor.query.json'),
-    //     createFixture('GET', '/api/v1/datasets', 'alerts.datasets.json'),
-    //     // cSpell:disable-next-line
-    //     createFixture('GET', '/api/v1/monitors/0E8LjxaGmlqqrTOtiv', 'monitor.monitor.json'),
-    //     createFixture('GET', '/api/v1/monitors', 'alerts.monitors.json'),
-    //     createFixture('GET', '/api/v1/notifiers', 'alerts.notifiers.json'),
-    //   ],
-    // },
+    {
+      ...baseScenario,
+      label: 'alerts',
+      url: url('/axiom/alerts'),
+      readySelectors: [...alertsReadySelectors],
+      fixtures: [...globalFixtures, ...alertsNotifiersFixtures],
+    },
+    {
+      ...baseScenario,
+      label: 'notifiers',
+      url: url('/axiom/alerts/notifiers'),
+      readySelectors: [...alertsReadySelectors, `${sel('notifiersSidebarList')} img[alt="Slack"]`],
+      fixtures: [...globalFixtures, ...alertsNotifiersFixtures],
+    },
+    {
+      ...baseScenario,
+      label: 'alerts/monitor',
+      // cSpell:disable-next-line
+      url: url('/axiom/alerts/monitor/0E8LjxaGmlqqrTOtiv'),
+      hideSelectors: [`${sel('queryResultsTiming')}`],
+      readySelectors: [...alertsReadySelectors, sel('monitorForm'), '.uplot', `${sel('queryForm')}.e2e-ready`],
+      fixtures: [
+        ...globalFixtures,
+        createFixture('GET', '/api/v1/datasets/k8s-logs/info', 'monitor.k8s-logs.json'),
+        createFixture('POST', '/api/v1/datasets/k8s-logs/query', 'monitor.query.json'),
+        createFixture('GET', '/api/v1/datasets', 'alerts.datasets.json'),
+        // cSpell:disable-next-line
+        createFixture('GET', '/api/v1/monitors/0E8LjxaGmlqqrTOtiv', 'monitor.monitor.json'),
+        createFixture('GET', '/api/v1/monitors', 'alerts.monitors.json'),
+        createFixture('GET', '/api/v1/notifiers', 'alerts.notifiers.json'),
+      ],
+    },
   ] as ExtendedScenario[]
 ).filter(includesScenario);
 
